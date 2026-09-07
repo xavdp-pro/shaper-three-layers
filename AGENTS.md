@@ -1,39 +1,17 @@
 # Agent Working Rules
 
-## Purpose
+The canonical layers are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper Linux is optional. Enterprise OS is the business reference manifestation across the layers and Packages.
 
-Contributors must preserve the separation between Shaper OS, Shaper Runtime, and Shaper Workspace.
+## Before acting
+1. Identify the owning layer and cross-layer contracts.
+2. State intention, scope, success, STOP and recovery.
+3. Separate observation, interpretation, conclusion and unknowns.
+4. Resolve knowledge, responsibility, control, permission and mandate independently.
+5. Inspect lineage before removing or renaming a concept.
+6. Validate both human and agent/system views.
 
-## Before changing anything
+Helm is a human-facing interface, not policy, durable truth, universal orchestration or infrastructure privilege. Route execution through Runtime authority, Governor coordination and Maker materialization where required.
 
-1. Identify the layer that owns the concern.
-2. State the intended result and success criterion.
-3. Separate observations from interpretations.
-4. Identify permissions, mandate, blast radius, and rollback.
-5. Reuse an existing concept before adding a duplicate.
-6. Preserve provenance and links to evidence.
+Files under `99-SOURCE-ARCHIVE/` are immutable evidence. Canonical corrections belong in active documents and the restoration audit.
 
-## Layer discipline
-
-- Do not place application-specific behavior in Shaper OS.
-- Do not place interface concerns inside Runtime contracts.
-- Do not let Workspace bypass Runtime authorization or evidence.
-- Do not turn implementation choices into universal kernel rules.
-- Do not create a fourth layer implicitly through inconsistent terminology.
-
-## Change discipline
-
-Every structural change must explain:
-
-- why it is needed;
-- what boundary it changes;
-- which existing documents it supersedes or refines;
-- how it can fail;
-- how it will be tested;
-- how it can be rolled back or revised.
-
-## Authority
-
-Intelligence is not authority. An agent may propose a cross-layer change without automatically receiving permission to execute it.
-
-For ambiguous, security-sensitive, irreversible, or systemic changes: STOP and escalate.
+Structural, irreversible, cross-tenant, security-sensitive or root actions require higher authority, counter-view, tests and recovery. Intelligence is not authority.

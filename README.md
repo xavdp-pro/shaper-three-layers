@@ -1,50 +1,82 @@
-# Shaper — Three-Layer Architecture
+# Shaper Organizational OS
 
-Private working repository for the unified Shaper architecture.
+## Dedicated architecture and documentation repository
 
-The system is organized into three distinct but connected layers:
+This repository isolates the architecture discussed for a portable, sovereign, agent-native operating environment for organizations.
 
-| Layer | Role | Core question |
-| --- | --- | --- |
-| [Shaper OS](layers/shaper-os/README.md) | Adaptive cognitive and governance kernel | How does the system perceive, decide, act, learn, and preserve integrity? |
-| [Shaper Runtime](layers/shaper-runtime/README.md) | Operational and technical substrate | How are identities, universes, objects, events, policies, agents, workflows, and evidence executed? |
-| [Shaper Workspace](layers/shaper-workspace/README.md) | Human and application environment | How do humans and agents work together through role-specific interfaces and business capabilities? |
+It is deliberately **not** the general Shaper OS repository, not the Enterprise OS application catalogue, and not a Linux distribution repository. Its purpose is to define the system that lets an organization keep the same work environment, identity, context, applications, agents and governance while the host device may change between Windows, macOS, Linux, mobile, web, or an optional sovereign Shaper Linux host.
 
-## Direction
-
-The three layers form one stack:
+## The three primary layers
 
 ```text
-SHAPER WORKSPACE
-Human experience, applications, role-based interaction
-              ↓
-SHAPER RUNTIME
-Execution, objects, events, policies, agents, persistence
-              ↓
 SHAPER OS
-Cognitive kernel, governance, integrity, learning
+living adaptive governance kernel
+        ↓ constrains / guides
+SHAPER RUNTIME
+identity + authority + objects + events + agents + data + security
+        ↓ exposes
+SHAPER WORKSPACE
+human operating environment + surfaces + dynamic applications
+        ↓ runs on
+HOST OS
+Windows | macOS | Linux | mobile | web | optional Shaper Linux
 ```
 
-The relationships are bidirectional: higher layers express intention and context; lower layers return state, evidence, tensions, and consequences.
+**Shaper Linux is transversal and optional.** It is a sovereign host implementation, not a fourth conceptual layer.
 
-## Naming boundary
+## Central architectural statement
 
-Earlier documents use **Enterprise OS** for the graph of reusable business primitives activated by the organization chart. That concept is preserved, but it is not treated as a fourth technical layer:
+> The host operating system owns hardware abstraction. Shaper owns the organization's operational environment.
 
-- its operational primitives belong primarily to **Shaper Runtime**;
-- its human-facing capabilities belong primarily to **Shaper Workspace**;
-- its governance and adaptation rules come from **Shaper OS**.
+The user may replace a Windows laptop with a Mac and recover the same organizational world after installation, device enrollment and authentication. The durable truth belongs to the organization universe, not to one workstation.
 
-Legacy terminology must be migrated explicitly rather than silently redefined.
+## Documentation audiences
+
+Every primary layer is documented at five reasoning depths:
+
+- **A1 — Bounded Executor**: local, explicit, reliable execution.
+- **A2 — Operational Reasoner**: diagnosis, hypotheses, tests, bounded adaptation.
+- **A3 — Systemic Reasoner**: architecture, governance, multi-scale effects and meta-regulation.
+- **Human Foundations**: progressive, example-first understanding without requiring system internals.
+- **Human Steward**: deeper operational/system understanding for people who steer or govern the environment.
+
+Agent depth is **not** authority. Human documentation depth is **not** privilege. Permissions are governed separately.
+
+## Documentation method
+
+Every important concept should be teachable through:
+
+1. **Words** — terms are understood before they are relied on.
+2. **Gradient** — concepts arrive in steps small enough to integrate.
+3. **Reality** — every abstraction reconnects to an example, observation, test, or consequence.
+
+And every substantial concept should answer:
+
+1. What is it?
+2. Why does it exist?
+3. What does it look like in practice?
+4. What can go wrong?
+5. How do we verify that it works?
 
 ## Repository map
 
-- `layers/shaper-os/` — kernel principles, governance, agent cognition, integrity, and recovery.
-- `layers/shaper-runtime/` — executable substrate, contracts, event model, mandates, workflows, storage, and observability.
-- `layers/shaper-workspace/` — human environment, applications, roles, interaction, and administration.
-- `ARCHITECTURE.md` — boundaries and information flow across the stack.
-- `AGENTS.md` — working rules for humans and AI agents contributing to this repository.
+- `00-META/` — scope, pedagogy, taxonomy, cross-layer architecture and open decisions.
+- `10-SHAPER-OS/` — living adaptive governance kernel as applied to this product.
+- `20-SHAPER-RUNTIME/` — operational truth, security, identity, agents, objects and services.
+- `30-SHAPER-WORKSPACE/` — Flutter/Dart portable organizational workspace.
+- `40-TRANSVERSAL/` — security, Linux host, object space, app model, protocol, web/host gateways, recovery.
+- `90-REVIEW/` — three independent perspective passes, gap register, coverage matrix and source lineage.
 
-## Status
+## Foundational invariant
 
-Living architecture. Stable in integrity, mobile in form, revisable in understanding.
+> **Stable in integrity. Mobile in form. Revisable in understanding. Guided by ethics. Controlled by feedback from reality.**
+
+The architecture is intentionally revisable. A rule, implementation choice, agent, metric or even this documentation must remain inspectable when reality shows that it no longer serves its purpose.
+
+## Enterprise reference and Helm restitution
+
+The complete enterprise-facing proposition is canonicalized under `50-ENTERPRISE-REFERENCE/`: business primitives, the future-owner/tester journey, Helm capabilities, the office-furniture demo, thirteen scenarios, checklists and acceptance tests.
+
+The unchanged September 2026 source pack is preserved under `99-SOURCE-ARCHIVE/`. Use `START-HERE.md` for reading routes.
+
+The earlier `layers/` tree is retained only as an initial bootstrap snapshot; the numbered directories are canonical.
