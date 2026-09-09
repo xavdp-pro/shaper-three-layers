@@ -12,6 +12,10 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 ## Reading routes
 
+- Organization and collaboration: `13_ORGANIZATION_COLLABORATION_AND_PLANNING.md`
+  links the organization graph, project planning, internal/customer chat and
+  management announcements to shared identities and governed operations.
+
 - Communication/telephony implementation: `12_COMMUNICATION_RELATIONSHIP_AND_SCHEDULING.md`
   captures Xavier's 2026-09-09 clarification, default workflows, shared relationship
   model, calendar, inboxes, notifications and operator interface acceptance.
