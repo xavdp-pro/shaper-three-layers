@@ -15,6 +15,78 @@ Unavailable modules contribute no fabricated results.
 
 ## Shared contract and ownership
 
+### Searchable object declaration — Xavier's clarification
+
+Xavier states that the existing quick search is in a CRM already delivered to a
+customer. Treat it as a reuse source to locate and inspect, not as an application
+to modify for this work. The required evolution is a common inter-brick object
+declaration protocol, rather than a central list of hard-coded CRM searches.
+
+An object type explicitly declares whether it is searchable. Opt-in does not
+make all its fields searchable, nor grant anyone access to its records. A type
+may expose only a safe subset of fields and apply per-record eligibility rules.
+Contacts, addresses, parties, products and other business types participate by
+declaration, without adding provider/module conditions to the search interface.
+
+Proposed conceptual declaration (field names are illustrative, not an adopted
+wire protocol):
+
+```yaml
+declarationVersion: 1
+owner: relationships
+objectType: contact
+objectSchemaVersion: 1
+searchable: true
+identity: stable-object-id
+fields:
+  - name: displayName
+    modes: [exact, text]
+    display: title
+  - name: phone
+    modes: [exact]
+    normalization: phone-number
+  - name: organizationId
+    modes: [filter]
+relations: [organization, address]
+authorization: runtime-current-record-and-field-policy
+projection: permitted-contact-summary
+resolver: canonical-contact-detail
+updates: versioned-upsert-and-delete-events
+```
+
+The declaration must identify ownership, schema/contract version, stable object
+identity, queryable/filterable fields and normalization, permitted projection,
+relation references, detail resolver and update/deletion behavior. If semantic
+indexing is supported, eligible fields and processing constraints are declared
+separately. Sensitive fields and arbitrary object payloads are not indexed by default.
+
+Runtime validates and registers declarations from installed authorized bricks.
+Unknown/incompatible versions fail explicitly. A brick cannot register itself as
+owner of another brick's object type or supply executable code through metadata.
+Keep contract capability references separate from arbitrary URLs or expressions.
+
+Registration lifecycle includes discovery, validation, activation, schema migration,
+deactivation and removal. Updates carry record versions; duplicate/out-of-order
+events do not restore stale or deleted records. Authorization is checked at query
+and detail/action access, including relation previews. Removing a declaration or
+setting searchable false withdraws its results and schedules index cleanup.
+
+The contract must support a declared retrieval strategy (index, source query or
+hybrid) without prescribing one engine. Each source reports availability, index
+freshness and pagination behavior. Cross-brick identity and relations let the
+aggregator group related records without merging distinct objects such as a
+contact and its address. Display/action metadata never confers action permission.
+
+- [ ] Locate the delivered CRM search with repository/revision and reuse rights;
+  inspect an isolated source copy without changing the customer's deployment.
+- [ ] Define and validate the searchable declaration schema with existing Runtime
+  conventions; publish versioning and compatibility rules before implementation.
+- [ ] Register contact, address and product declarations as the first examples.
+- [ ] Prove a new declared object type appears without editing central search/UI
+  routing, while respecting permitted field projections and record eligibility.
+- [ ] Test activation/removal, searchable=false, migration, deletion, duplicate
+  events, current authorization and a disconnected source.
+
 Each participating subsystem declares searchable object types, stable identities,
 canonical links, permitted summaries, filters and supported contextual actions.
 Runtime enforces organization boundaries and current permissions before returning
