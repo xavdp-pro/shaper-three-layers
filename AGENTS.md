@@ -10,6 +10,14 @@ The canonical layers are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper 
 5. Inspect lineage before removing or renaming a concept.
 6. Validate both human and agent/system views.
 
+## Before closing a design sequence
+After a coherent advance in one or more layers, complete
+[`90-REVIEW/SESSION-CLOSEOUT-THREE-PASS.md`](90-REVIEW/SESSION-CLOSEOUT-THREE-PASS.md).
+The three passes inspect kernel/governance, human/organizational reality, and
+runtime/adversarial reality. Use an independent counter-view when one is
+available; otherwise record that it was unavailable. A local conclusion is not
+a cross-layer conclusion.
+
 Helm is a human-facing interface, not policy, durable truth, universal orchestration or infrastructure privilege. Route execution through Runtime authority, Governor coordination and Maker materialization where required.
 
 Files under `99-SOURCE-ARCHIVE/` are immutable evidence. Canonical corrections belong in active documents and the restoration audit.
