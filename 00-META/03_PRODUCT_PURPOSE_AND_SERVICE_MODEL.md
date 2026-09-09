@@ -42,7 +42,7 @@ without forcing it to discard its history or conform to a rigid template.
 | Scope | Working name | Purpose |
 | --- | --- | --- |
 | Platform parent | **Shaper Service** | Subscription, identity boundary, entitlement, billing and the service control plane. |
-| Portfolio scope | **Shaper Portfolio** | A Steward's cross-organization view: selected health, activity, risk and value signals across one or more Organizations. |
+| Portfolio scope | **Shaper Portfolio** | A Steward's authorized cross-organization view: selected health, activity, risk and value signals across one or more Organizations. |
 | Operational scope | **Shaper Organization** | One governed enterprise, association, practice or operating entity with its own people, objects, policies, data and applications. |
 | Bounded child scope | **Shaper Cell** | A delegated team, site, project, client environment or specialized operational scope inside an Organization. |
 | Work environment | **Shaper Workspace** | The human-facing surfaces through which people and agents observe, collaborate and act. |
@@ -52,13 +52,23 @@ organizational or system scope. In ordinary product language, **Organization**
 is clearer for a company customer. An Organization may be a Universe; a Cell may
 be a child Universe when its autonomy, data and policy boundary require it.
 
+A Portfolio is not a parent authority by default. It receives only the
+information and control each Organization explicitly discloses through policy,
+role and mandate. Its purpose is stewardship and orientation, not automatic
+surveillance.
+
 ## Growth model
 
 A subscription grants a declared capacity: one or more Organizations, their
 Cells, selected bricks, usage budgets and authorized execution environments.
+An entitlement grants eligibility and capacity; it never grants operational
+permission, data visibility or a mandate to act. Those remain Runtime authority
+decisions inside the relevant Organization.
+
 Governor coordinates approved work; Maker materializes approved infrastructure
 changes. When capacity requires another host, the platform adds a governed Host
-rather than changing the organizational model.
+rather than changing the organizational model. Platform administration likewise
+does not silently become Organization authority or operational source of truth.
 
 This keeps growth incremental:
 
