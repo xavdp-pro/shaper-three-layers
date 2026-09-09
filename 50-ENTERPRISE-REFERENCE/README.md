@@ -12,6 +12,10 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 ## Reading routes
 
+- Company governance surfaces: `15_DIRECTION_DECISIONS_AND_MANDATES.md` separates
+  social discussions, company direction and authoritative decisions/mandates,
+  including scope-specific onboarding for new agents.
+
 - Cross-module navigation: `14_UNIFIED_QUICK_SEARCH.md` defines aggregated,
   permission-filtered object search and reuse of Xavier's existing implementation.
 
