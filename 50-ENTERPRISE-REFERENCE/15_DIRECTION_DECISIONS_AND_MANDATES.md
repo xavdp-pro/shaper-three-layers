@@ -23,6 +23,46 @@ actually happened. These concepts link to one another but are not interchangeabl
 
 ## Ownership across layers
 
+## Participatory purpose — Xavier's clarification
+
+Vie d'entreprise is a democratic participation and suggestion channel concerning
+company direction, not merely a management publishing surface. Members can raise
+issues, suggest improvements or alternative priorities, discuss proposals and
+contribute to the organization's direction under explicit participation rules.
+This purpose is a user requirement. The mechanisms below are proposed ways to
+make it effective; no voting constitution is assumed to have been adopted.
+
+Provide a visible proposal lifecycle: submitted, open for discussion, under review,
+scheduled for a decision, accepted, declined or deferred. Record the responsible
+reviewer, response deadline and reasons for the outcome. Accepted proposals link
+to the decision register and, where relevant, projects and results. Authors and
+participants can follow progress; participation must not end at an untracked post.
+
+Separate reactions, support, consultation and a binding vote. Before any vote,
+declare eligible participants, scope, deadline, quorum/threshold if applicable,
+ballot visibility and whether the outcome is advisory or binding. Those rules
+must be approved by the organization's legitimate governance. A binding result
+becomes a decision through that declared process; it does not require a second
+arbitrary approval or grant capabilities outside the process's authorized scope.
+
+Support alternative proposals and minority reasoning as well as the most popular
+view. Explain moderation decisions and provide a review route. Audience controls
+must distinguish confidentiality from selective exclusion from an agreed electorate.
+Anonymous/confidential submission and secret ballots are optional designs requiring
+explicit privacy guarantees; do not promise anonymity that the system cannot provide.
+
+Agents may help formulate proposals or summarize arguments with source references,
+including disagreements. Their contributions are attributed. They do not impersonate
+employees, manufacture support or receive a human voting entitlement by default.
+
+- [ ] Add proposal creation and discussion connected to company orientations.
+- [ ] Show proposal status, accountable reviewer, response date and reasoned outcome.
+- [ ] Define consultation/vote rules before enabling those mechanisms.
+- [ ] Link accepted outcomes to decisions, execution and visible follow-up.
+- [ ] Preserve alternative/minority arguments and transparent moderation history.
+
+## Layer responsibility detail
+
 Shaper OS supplies governance principles. Runtime stores and enforces decision
 and mandate state, authority, scope and history. Workspace exposes the register,
 direction pages and social feed. Business packages provide domain vocabulary
