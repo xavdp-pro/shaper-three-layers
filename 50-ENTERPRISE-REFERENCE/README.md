@@ -12,6 +12,9 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 ## Reading routes
 
+- Cross-module navigation: `14_UNIFIED_QUICK_SEARCH.md` defines aggregated,
+  permission-filtered object search and reuse of Xavier's existing implementation.
+
 - Organization and collaboration: `13_ORGANIZATION_COLLABORATION_AND_PLANNING.md`
   links the organization graph, project planning, internal/customer chat and
   management announcements to shared identities and governed operations.
