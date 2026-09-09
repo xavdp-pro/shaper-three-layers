@@ -14,10 +14,16 @@ automation. It strengthens people's capacity to understand their work, act with
 appropriate autonomy, learn across roles, cooperate and build durable economic
 value.
 
+Automation is not forbidden. An agent may remove drudgery, extend capability,
+take over a bounded task or, where the organization deliberately chooses it,
+operate a role whose work can be made safe, lawful and verifiable. The standard
+is not preservation of every task: it is accountable transition, clear
+authority, visible consequences and a net increase in the organization's and
+its people's capacity to create value.
+
 An agent is an assistant, collaborator or bounded operator under human
-governance. It may reduce drudgery and extend capability; it does not erase the
-human dignity, accountability, development or livelihood that an organization
-must protect.
+governance. It does not erase the human dignity, accountability, development or
+livelihood that an organization must protect.
 
 ## What the service provides
 
