@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shaper Vox Generic Enterprise Telephony Intents",
+  "description": "Standardized conversational intents and tool specifications for sovereign enterprise telephony in Shaper OS.",
+  "intents": [
+    {
+      "name": "intent.greet_and_identify",
+      "category": "ingress",
+      "description": "Greet caller and resolve ANI/CallerID to Contact and Company in the runtime object graph.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "caller_name": { "type": "string", "description": "Spoken caller name if provided" },
+          "company_name": { "type": "string", "description": "Company name if business call" },
+          "intent_summary": { "type": "string", "description": "High-level reason for calling" }
+        },
+        "required": ["intent_summary"]
+      }
+    },
+    {
+      "name": "intent.route_to_department",
+      "category": "ingress",
+      "description": "Route caller to a specific business queue or ring-group.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "department": {
+            "type": "string",
+            "enum": ["sales", "support", "billing", "reception", "logistics"],
+            "description": "Target enterprise department"
+          }
+        },
+        "required": ["department"]
+      }
+    },
+    {
+      "name": "intent.route_to_person",
+      "category": "ingress",
+      "description": "Transfer caller to a specific named employee or internal extension.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person_name": { "type": "string", "description": "Full or partial name of target employee" },
+          "extension": { "type": "string", "pattern": "^\\d{2,4}$", "description": "Direct internal extension" }
+        }
+      }
+    },
+    {
+      "name": "intent.query_company_info",
+      "category": "ingress",
+      "description": "Provide certified official company information without model hallucination.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "enum": ["hours", "address", "access_parking", "payment_terms", "legal_siret", "contact_directory"],
+            "description": "Information topic category"
+          },
+          "lang": {
+            "type": "string",
+            "enum": ["fr", "en", "ja"],
+            "default": "fr"
+          }
+        },
+        "required": ["topic"]
+      }
+    },
+    {
+      "name": "intent.check_availability",
+      "category": "scheduling",
+      "description": "Query live calendar availability for appointments or on-site visits.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+            "description": "Canonical weekday requested by caller"
+          },
+          "service_type": { "type": "string", "description": "Category of consultation or intervention" }
+        },
+        "required": ["day"]
+      }
+    },
+    {
+      "name": "intent.book_meeting",
+      "category": "scheduling",
+      "description": "Reserve a confirmed slot. Guarded tool requiring 2-phase Consent Guard commit.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "minLength": 2, "description": "Full name of the client" },
+          "phone": { "type": "string", "minLength": 6, "description": "Callback phone number" },
+          "day": {
+            "type": "string",
+            "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+            "description": "Agreed day"
+          },
+          "time": { "type": "string", "pattern": "^\\d{2}:\\d{2}$", "description": "Slot in HH:MM format" },
+          "topic": { "type": "string", "description": "Meeting subject" }
+        },
+        "required": ["name", "phone", "day", "time"]
+      }
+    },
+    {
+      "name": "intent.reschedule_meeting",
+      "category": "scheduling",
+      "description": "Reschedule an existing meeting. Guarded tool requiring 2-phase Consent Guard commit.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "meeting_id": { "type": "string", "description": "Meeting identifier" },
+          "phone": { "type": "string", "description": "Client phone number" },
+          "day": {
+            "type": "string",
+            "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"],
+            "description": "New target day"
+          },
+          "time": { "type": "string", "pattern": "^\\d{2}:\\d{2}$", "description": "New slot in HH:MM" }
+        },
+        "required": ["day", "time"]
+      }
+    },
+    {
+      "name": "intent.cancel_meeting",
+      "category": "scheduling",
+      "description": "Cancel an existing meeting. Guarded tool requiring 2-phase Consent Guard commit.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "meeting_id": { "type": "string", "description": "Meeting identifier" },
+          "phone": { "type": "string", "description": "Client phone number" },
+          "reason": { "type": "string", "description": "Cancellation reason" }
+        }
+      }
+    },
+    {
+      "name": "intent.track_order_status",
+      "category": "business",
+      "description": "Retrieve shipping or fulfillment status for an existing order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_ref": { "type": "string", "description": "Order reference code" },
+          "phone": { "type": "string", "description": "Customer phone number" }
+        },
+        "required": ["order_ref"]
+      }
+    },
+    {
+      "name": "intent.request_quote",
+      "category": "business",
+      "description": "Register a new commercial quote request for sales review.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "client_name": { "type": "string", "description": "Client contact name" },
+          "company": { "type": "string", "description": "Company name" },
+          "phone": { "type": "string", "description": "Contact number" },
+          "product_category": { "type": "string", "description": "Product or service requested" },
+          "specifications": { "type": "string", "description": "Specific dimensions, quantity or requirements" }
+        },
+        "required": ["client_name", "phone", "product_category"]
+      }
+    },
+    {
+      "name": "intent.record_arrival_status",
+      "category": "operations",
+      "description": "Record visitor or staff arrival status. Delay minutes strictly required if late.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["on_time", "late", "cannot_come", "wants_reschedule"],
+            "description": "Arrival status"
+          },
+          "delay_minutes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 480,
+            "description": "Expected delay in minutes. Mandatory when status is late."
+          },
+          "reason": { "type": "string", "description": "Contextual reason for delay" }
+        },
+        "required": ["status"]
+      }
+    },
+    {
+      "name": "intent.report_issue_ticket",
+      "category": "operations",
+      "description": "File an incident report or customer support case.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "caller_name": { "type": "string", "description": "Name of reporter" },
+          "phone": { "type": "string", "description": "Contact phone" },
+          "severity": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "critical"],
+            "default": "medium"
+          },
+          "description": { "type": "string", "description": "Detailed description of the issue" }
+        },
+        "required": ["description"]
+      }
+    },
+    {
+      "name": "intent.record_voicemail_message",
+      "category": "operations",
+      "description": "Leave a structured message for an internal extension or department.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "recipient": { "type": "string", "description": "Target person or department" },
+          "message": { "type": "string", "minLength": 5, "description": "Spoken message content" },
+          "urgent": { "type": "boolean", "default": false }
+        },
+        "required": ["message"]
+      }
+    },
+    {
+      "name": "intent.handoff_to_human",
+      "category": "lifecycle",
+      "description": "Escalate to live human agent or register high-priority callback task.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reason": { "type": "string", "description": "Reason for human transfer or callback" },
+          "preferred_window": { "type": "string", "description": "Preferred callback time" }
+        },
+        "required": ["reason"]
+      }
+    },
+    {
+      "name": "intent.confirm_action",
+      "category": "lifecycle",
+      "description": "Confirm only the unchanged action identified by the latest completed action-bound readback.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pending_action_id": { "type": "string", "description": "Opaque identity of the staged action" },
+          "whole_turn_response": { "type": "string", "description": "Complete caller turn evaluated by the consent guard" }
+        },
+        "required": ["pending_action_id", "whole_turn_response"]
+      }
+    },
+    {
+      "name": "intent.refuse_action",
+      "category": "lifecycle",
+      "description": "Reject or correct the currently staged action and invalidate any previous consent.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pending_action_id": { "type": "string", "description": "Opaque identity of the staged action" },
+          "correction": { "type": "string", "description": "Optional caller correction preserved for a new proposal" }
+        },
+        "required": ["pending_action_id"]
+      }
+    },
+    {
+      "name": "intent.end_call",
+      "category": "lifecycle",
+      "description": "Politely conclude call and trigger clean hangup.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reason": { "type": "string", "description": "Closure reason" }
+        },
+        "required": ["reason"]
+      }
+    }
+  ]
+}
