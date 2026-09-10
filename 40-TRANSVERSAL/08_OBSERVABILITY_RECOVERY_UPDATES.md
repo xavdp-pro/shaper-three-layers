@@ -52,6 +52,10 @@ Recovery scope includes:
 
 Test actual restoration.
 
+The [universe recovery catalogue](12_UNIVERSE_RECOVERY_CATALOG.md) records the
+proposed Registry-backed recovery view, protected pulled backups, existing
+Shaper naming, activation fencing and measured recovery proof.
+
 ## Client recovery
 
 A client should be disposable in server-centric topology:
