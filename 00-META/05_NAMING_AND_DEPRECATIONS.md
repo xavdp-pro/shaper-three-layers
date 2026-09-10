@@ -33,7 +33,17 @@ This avoids describing one hybrid layer as both backend and desktop.
 
 ## “Helm” and “Maestro”
 
-Earlier Enterprise OS documentation used `Helm` and `Maestro` for interaction/orchestration concepts. Those names are **not canonical here** unless deliberately reintroduced later.
+Earlier Enterprise OS documentation used `Helm` and `Maestro` for interaction/orchestration concepts. Those names were **not canonical here** unless deliberately reintroduced later.
+
+> **Amended.** That reintroduction happened, deliberately, and for `Helm` only.
+> The fourth review pass restored the enterprise experience together with the
+> canonical Helm model ([`90-REVIEW/PASS_4_ENTERPRISE_RESTITUTION.md`](../90-REVIEW/PASS_4_ENTERPRISE_RESTITUTION.md));
+> its capability contract is [`50-ENTERPRISE-REFERENCE/10_HELM_CAPABILITY_MODEL.md`](../50-ENTERPRISE-REFERENCE/10_HELM_CAPABILITY_MODEL.md)
+> and its boundary against Governor and Maker is
+> [`40-TRANSVERSAL/10_HELM_GOVERNOR_MAKER_MAPPING.md`](../40-TRANSVERSAL/10_HELM_GOVERNOR_MAKER_MAPPING.md).
+> `Maestro` was **not** reintroduced: its functions remain distributed as the
+> table below states. This page is amended rather than rewritten — the
+> deprecation was real, and the condition it carried was met for one name.
 
 Preserved functions map to:
 
