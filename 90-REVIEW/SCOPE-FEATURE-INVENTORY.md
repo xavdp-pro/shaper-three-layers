@@ -45,11 +45,45 @@ Do not introduce an unconnected duplicate checklist for each agent.
 - Small fixes may use a small inventory. Do not audit all Shaper before every typo;
   audit the whole declared perimeter and its relevant dependency boundary.
 
+## The constructing agent owns the functional acceptance run
+
+The human-agent tandem defines what is to be produced. Before building, the
+constructing agent writes the feature checklist and expected observable results,
+including dependencies and connections. It maintains that SAME checklist as
+features are added or changed; it never reconstructs a smaller checklist from
+only the code that happened to ship.
+
+After assembling and connecting the delivered system, the constructing agent
+executes each scoped feature's acceptance scenario itself, within the existing
+mandate, through the real installed interface or public contract. Code review,
+a successful build, unit tests and service health are supporting evidence;
+they do not replace exercising the assembled feature and reading its result.
+
+For every feature, record the steps actually executed, expected and observed
+results, source revision, installed target, date and evidence location. Verify
+persisted effects outside the producing component, including downstream
+connections and relevant failure/recovery behavior. A button press or success
+message alone is not proof. After a correction, repeat the failed scenario and
+any affected dependent scenarios before checking the feature off.
+
+A scenario needing unavailable hardware, an unauthorized external recipient,
+unauthorized spending or another action outside the mandate remains NOT VERIFIED with its blocker and
+next step. Never silently skip it or mark it passed. The agent performs all
+other authorized checks without leaving routine testing to the human. Human
+acceptance remains separate: the agent's functional proof supports the human's
+judgment; it does not impersonate that judgment.
+
+An independent review supplements this responsibility; it does not transfer it.
+For an existing delivery with no complete execution record, reopen the checklist
+and test the missing scenarios rather than retroactively declaring them passed.
+
 ## Before delivery: revisit the SAME inventory
 
 - [ ] Every listed source was read or its coverage gap is explicitly OPEN.
 - [ ] Every discovered requirement maps to feature IDs; none was silently omitted.
 - [ ] Every dependency and consumer impact has been reviewed.
+- [ ] The constructing agent executed every scoped feature on the assembled target,
+  or explicitly recorded NOT VERIFIED with a blocker and next step.
 - [ ] Every feature's expected behavior has been confronted with actual evidence.
 - [ ] Coding, test, deployment and human-acceptance states are separate and honest.
 - [ ] Failed, missing, deferred and out-of-scope items remain visible with reasons.

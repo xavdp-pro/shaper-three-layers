@@ -15,6 +15,14 @@ INTENTION → OBJECTS/CONTEXT → AUTHORITY/MANDATE → ACTION
 3. **Implementation/production:** contracts, state machines, idempotency, concurrency, side effects, versioning, observability and restoration.
 4. **Adversarial/drift:** isolation, hostile input, stale authority, deceptive schema, unsafe plugin, resource pressure, sensor failure and model/provider drift.
 
+## Execution responsibility
+
+The constructing agent owns the before-build checklist and the after-assembly
+functional acceptance run for every scoped feature, as defined in
+[the scope-first inventory](../90-REVIEW/SCOPE-FEATURE-INVENTORY.md#the-constructing-agent-owns-the-functional-acceptance-run).
+The records below carry its actual execution evidence. Independent review and
+human acceptance remain separate; neither replaces the agent's own checks.
+
 ## Test record
 
 ```yaml
@@ -30,6 +38,13 @@ permission_and_mandate:
 expected_events:
 expected_result:
 expected_evidence:
+executed_at:
+installed_target:
+source_revision:
+executed_steps:
+observed_result:
+actual_evidence_reference:
+blocker_and_next_step:
 human_explanation:
 failure_injections:
 stop_condition:
