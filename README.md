@@ -87,4 +87,6 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 
 - [Conversational agent prompt-testing workspace](40-TRANSVERSAL/14_CONVERSATIONAL_AGENT_TEST_WORKSPACE.md)
 
+- [Shared inline audio players](40-TRANSVERSAL/15_WORKSPACE_INLINE_AUDIO_PLAYERS.md)
+
 - [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
