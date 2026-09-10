@@ -80,3 +80,7 @@ The complete enterprise-facing proposition is canonicalized under `50-ENTERPRISE
 The unchanged September 2026 source pack is preserved under `99-SOURCE-ARCHIVE/`. Use `START-HERE.md` for reading routes.
 
 The earlier `layers/` tree is retained only as an initial bootstrap snapshot; the numbered directories are canonical.
+
+## Shared interface contracts
+
+- [Branded selection controls and searchable lists](40-TRANSVERSAL/13_WORKSPACE_SELECTION_CONTROLS.md)
