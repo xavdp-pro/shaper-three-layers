@@ -92,7 +92,7 @@ requested; Runtime authority still decides what may execute.
 ### 3.4 Support & Incident Reporting
 | Intent | Description | Extracted Entities | Backend Action |
 |---|---|---|---|
-| `intent.record_arrival_status` | Reports visitor / technician delay or absence | `status` (`late`, `cannot_come`), `delay_minutes` (number), `reason` | **Hard code rule**: If `late`, `delay_minutes` is strictly required. Rejected by code if absent. |
+| `intent.record_arrival_status` | Reports visitor / technician delay or absence | `status` (`late`, `cannot_come`), `delay_known` (boolean), `delay_minutes` (integer or null), `reason` | For `late`, accept a valid explicit duration or an explicit `delay_known: false` with no duration. Refuse unspecified or contradictory delay information. Persist unknown separately from zero. |
 | `intent.report_issue_ticket` | Logs an incident, fault, or urgent complaint | `severity` (enum), `asset_id`, `description` | Creates structured Case/Ticket linked to customer timeline. |
 | `intent.record_voicemail_message` | Leaves a detailed spoken message for an extension/service | `recipient`, `message`, `urgent` (bool) | Reads back message; stores audio + text, dispatches task notification to recipient. |
 
@@ -113,7 +113,22 @@ requested; Runtime authority still decides what may execute.
 - **Mechanism**:
   - Missing parameters return `{ saved: false, reason: '...', instruction: '...' }`.
   - Enums are strictly closed (e.g. weekdays must be `monday`..`friday`, not arbitrary strings).
-  - Business constraints (e.g. delay without minutes, booking without phone number) are refused in code before reaching the database.
+  - Business constraints (e.g. delay without either valid minutes or an explicit unknown declaration, booking without phone number) are refused in code before reaching the database.
+
+#### Arrival-delay amendment — 2026-09-10 (review F-010)
+
+The former requirement that every late arrival have numeric minutes contradicted
+the operator's explicit "if known" requirement and
+[enterprise communications section4.5](../50-ENTERPRISE-REFERENCE/12_COMMUNICATION_RELATIONSHIP_AND_SCHEDULING.md).
+This amendment replaces that numeric-only requirement, not transaction validation.
+Ask for an estimate when absent; when the person cannot estimate, submit
+`delay_known: false` and omit minutes or use null. Persist unknown as null with an
+explicit unknown flag, never zero. A provided duration must be an integer in the
+declared runtime range; legacy calls providing valid minutes without the flag
+remain valid. Reject malformed values and contradictory combinations. Read back
+the actual known/unknown information; recording attendance never reschedules a
+booking by implication. Runtime adapters and their regression tests must be
+qualified separately from this documentary reconciliation.
 
 ### Rule T-02: Action-Bound Consent Guard (Two-Phase Spoken Commit)
 - **Invariant**: No irreversible state mutation (creating/deleting bookings, placing orders, issuing documents) can occur on single-turn inference.
@@ -210,7 +225,13 @@ is expressed as a parameterized contract and tested without Clinic fixtures.
 
 ## 6. Verification & Acceptance Protocol
 
-1. **Automated Twin-Agent Bench**: Dual Voice-Agent setup (`banc.js`) executing the entire intent suite without physical telephony hardware.
+1. **Automated Twin-Agent Bench**: Dual Voice-Agent setup (`banc.js`) executing
+   the entire declared intent suite without physical telephony hardware. For a
+   bounded profile trial, record every supported intent and every exclusion;
+   all supported intents must run. This does not qualify the entire catalog:
+   full catalog acceptance additionally requires its omitted suites. This
+   clarification (2026-09-10, F-012) follows section3's selectable profile scope
+   and never allows a failed supported intent to become an undeclared exclusion.
 2. **Consent Guard Suite**: 100% test pass on staging, readback markers, whole-turn affirmative matching, and refusal on backchannel/noise.
 3. **Dialplan Contract**: Verification that test extensions cannot mutate real database objects.
 4. **Latency Budget**: Measure provider and local intervals separately. Each

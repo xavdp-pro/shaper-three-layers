@@ -61,6 +61,10 @@ external notification channel is enabled.
 5. One-hour appointment reminder: ask whether the person expects to be on time;
    if late, ask the estimated delay if known; offer a message to the team. Store
    unknown delay distinctly from zero. Do not silently reschedule the appointment.
+   Runtime contract: explicit `delay_known: false` with no numeric duration means
+   unknown; a missing estimate alone does not establish that the caller cannot
+   estimate. See the amended arrival-status contract in
+   [telephony T-01](../40-TRANSVERSAL/11_SHAPER_VOX_TELEPHONY_SUBSYSTEM.md).
 6. Missed/unanswered call: create a visible message or callback item with an owner.
 
 These supported baseline operations require real hooks: contact lookup, availability,
