@@ -86,3 +86,5 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 - [Branded selection controls and searchable lists](40-TRANSVERSAL/13_WORKSPACE_SELECTION_CONTROLS.md)
 
 - [Conversational agent prompt-testing workspace](40-TRANSVERSAL/14_CONVERSATIONAL_AGENT_TEST_WORKSPACE.md)
+
+- [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)

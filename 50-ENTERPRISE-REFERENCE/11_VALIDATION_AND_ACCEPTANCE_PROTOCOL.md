@@ -62,3 +62,10 @@ reviewer:
 `NOT STARTED` → `PARTIAL` → `DEMO VALIDATED` → `PRODUCTION CANDIDATE` → `PRODUCTION VALIDATED`, with `DEGRADED/REVOKED` when trust or compatibility changes.
 
 Every simulated integration declares what is fictional, what behavior is real, what production connector replaces it, and which legal/security constraints appear in production.
+
+## Perimeter completeness prerequisite
+
+Use [the scope-first feature inventory](../90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
+before implementation and reconcile the same rows before delivery. The checks
+above evaluate quality; they do not establish that every scoped requirement has
+been identified. Record source coverage, dependencies and omissions separately.

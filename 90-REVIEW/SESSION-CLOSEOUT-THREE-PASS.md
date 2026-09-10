@@ -94,3 +94,10 @@ business capabilities or a cross-layer integration.
 
 Its purpose is to prevent local progress from silently becoming global
 incoherence. The review may produce no change; that is still useful evidence.
+
+## Perimeter completeness prerequisite
+
+Use [the scope-first feature inventory](../90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
+before implementation and reconcile the same rows before delivery. The checks
+above evaluate quality; they do not establish that every scoped requirement has
+been identified. Record source coverage, dependencies and omissions separately.

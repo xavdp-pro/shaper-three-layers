@@ -313,3 +313,10 @@ Before agent execution:
 - Data retention rule?
 - Cross-tenant isolation?
 - Backup/recovery path?
+
+## Perimeter completeness prerequisite
+
+Use [the scope-first feature inventory](../90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
+before implementation and reconcile the same rows before delivery. The checks
+above evaluate quality; they do not establish that every scoped requirement has
+been identified. Record source coverage, dependencies and omissions separately.

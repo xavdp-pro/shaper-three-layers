@@ -9,6 +9,11 @@ The canonical layers are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper 
 4. Resolve knowledge, responsibility, control, permission and mandate independently.
 5. Inspect lineage before removing or renaming a concept.
 6. Validate both human and agent/system views.
+7. Before implementation, inventory all capabilities and dependencies in the
+   declared perimeter using [`90-REVIEW/SCOPE-FEATURE-INVENTORY.md`](90-REVIEW/SCOPE-FEATURE-INVENTORY.md).
+   Revisit the same feature IDs and acceptance checklist before delivery. Record
+   source coverage gaps and separate coded, tested, deployed and human-accepted
+   states. Scale the inventory to the task; do not add routine approval waits.
 
 ## Before closing a design sequence
 After a coherent advance in one or more layers, complete
