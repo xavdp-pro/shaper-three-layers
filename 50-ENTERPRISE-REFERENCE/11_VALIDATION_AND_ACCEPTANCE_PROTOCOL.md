@@ -34,6 +34,14 @@ intent:
 resolved_objects:
 epistemic_state:
 required_capabilities:
+interaction_surfaces:
+test_driver_and_version:
+required_equipment_and_access:
+test_means_verified:
+observation_channel:
+coverage_limits:
+execution_actor:
+test_data_and_cleanup:
 permission_and_mandate:
 expected_events:
 expected_result:

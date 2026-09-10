@@ -77,11 +77,56 @@ An independent review supplements this responsibility; it does not transfer it.
 For an existing delivery with no complete execution record, reopen the checklist
 and test the missing scenarios rather than retroactively declaring them passed.
 
+## Test means follow the delivered interaction
+
+Canonical obligation: [Shaper OS Rule 20](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/software/RULES.md#rule-20-functional-test-means).
+This section applies that obligation to the inventory and execution record;
+it does not grant separate authority.
+
+For each feature, the constructing agent derives the required test means from
+its intended use, interfaces and dependencies, before implementation. This is
+an open-ended obligation, not a closed list of supported technologies. Inventory
+inherited base capabilities as well as the specialization: a telephony universe
+is a standard universe plus telephony, not just the newest telephone screens.
+
+Declare, per scenario: the interaction surface, real target, driver/control tool,
+observation channel, required access or equipment, safe test data, cleanup and
+what the chosen means can and cannot prove. Prepare and verify those means
+within the mandate; an installed tool is not proof that it can reach and control
+the target. Make testability part of the feature design instead of discovering
+at delivery that the agent has no way to exercise it.
+
+Examples below illustrate the method; they do not limit it:
+
+| Delivered surface | Required functional exercise | Evidence boundary |
+| --- | --- | --- |
+| Command-line interface | Run the actual commands, including relevant failure cases | Exit code, output and resulting state/artifact |
+| API | Send actual requests through the delivered API with the intended identity | Response, permissions and independently observed persisted/downstream effects |
+| Web interface | Drive a real browser with Playwright or an equivalent available browser-control tool | User journey, interaction, responsive/accessibility checks and resulting effects; direct API tests alone do not validate the UI |
+| Mobile application | Control the installed application on an authorized device using an available platform driver | App interactions, permissions, network and relevant device capabilities; an emulator qualifies only the behavior it actually covers |
+| Sensor, peripheral or physical equipment | Establish authorized control/stimulation and independent observation of the real equipment | Physical input through transport and application to the expected output; simulated input does not prove hardware operation |
+
+When a feature spans several surfaces, test each exposed contract AND the
+assembled journey across them. A successful API call does not prove the mobile
+screen, and a rendered screen does not prove the connected peripheral. Add the
+appropriate means for any new surface using the same method.
+
+If a required device, driver, connection or permission is unavailable, first
+inspect the means already available. Prepare what is authorized and identify the
+smallest missing operator action (for example connect a test phone and enable
+its control access). Continue independent checks; keep the unsupported scenario
+NOT VERIFIED. Never replace a real-world requirement with a simulation and call
+it passed. No unapproved purchase, external call or physical actuation is implied.
+Human-assisted execution, when unavoidable, is attributed as such rather than
+claimed as autonomous agent execution.
+
 ## Before delivery: revisit the SAME inventory
 
 - [ ] Every listed source was read or its coverage gap is explicitly OPEN.
 - [ ] Every discovered requirement maps to feature IDs; none was silently omitted.
 - [ ] Every dependency and consumer impact has been reviewed.
+- [ ] Every delivered interaction surface has suitable, verified test means;
+  missing access/equipment and limits of simulated coverage are explicit.
 - [ ] The constructing agent executed every scoped feature on the assembled target,
   or explicitly recorded NOT VERIFIED with a blocker and next step.
 - [ ] Every feature's expected behavior has been confronted with actual evidence.

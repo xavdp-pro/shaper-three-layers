@@ -46,3 +46,19 @@ external recipients/spending and missing actual-result fields in the record
 schema. Corrected both: authorized scenarios proceed, and the template now
 captures execution date, target, revision, steps, observed result, evidence and
 blocker/next step. Conclusion: COHERENT WITH CORRECTIONS for DOC-ACCEPT-01/02.
+
+## Test-means addendum and canon placement
+
+Scope DOC-MEANS-01: derive and verify test means for every actual interaction
+surface, including inherited capabilities. DOC-MEANS-02: distinguish hardware,
+emulator and human-assisted evidence; preserve mandate and blocked-state rules.
+DOC-MEANS-03: place the fundamental obligation in Shaper OS Rule 20, with an
+agent boot pointer; this architecture document remains execution guidance.
+
+Governance: the operator explicitly requested canon placement; no authority is
+created by the examples. Human reality: missing device access is discovered
+early and requests identify the smallest required action. Runtime: both exposed
+contracts and assembled journeys require evidence; installed tools alone are
+not a proof. Independent reviewer connection_review found no actionable gap in
+the surface/method addition. All three IDs have corresponding text/schema fields;
+no runtime implementation or completed product test campaign is claimed here.
