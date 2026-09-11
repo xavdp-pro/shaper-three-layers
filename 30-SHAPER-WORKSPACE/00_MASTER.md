@@ -396,7 +396,14 @@ Workspace must be able to display:
 
 ## 27. Interface to Shaper OS
 
-Workspace embodies the kernel pedagogically:
+Workspace embodies the kernel pedagogically. For the
+[OS firmness/permeability distinction](../10-SHAPER-OS/00_MASTER.md#11-counter-view-and-diversity),
+show the counter-view, supporting evidence, response, pending disagreements and
+whether a change is merely proposed, authorized or actually executed. A reviewer
+recommendation must not appear as an approval. Route execution to Runtime's current
+permission check; Workspace neither grants authority nor hides a rejected proposal.
+
+This includes:
 
 - reality/context before conclusions;
 - visible distinction between proposal and executed result;

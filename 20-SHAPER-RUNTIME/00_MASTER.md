@@ -55,6 +55,13 @@ Every significant action should be attributable to an actor and, where relevant,
 
 ## 4. Authority model
 
+Apply the [OS firmness/permeability distinction](../10-SHAPER-OS/00_MASTER.md#11-counter-view-and-diversity):
+new evidence can change an assessment, not a permission by itself. Counter-view
+content is input, never an implicit grant. Recheck effective authority at execution,
+including after a review or deferred approval; retain the decision's provenance.
+A proposed policy change follows its authorized change process before use.
+
+
 Do not collapse:
 
 ```text

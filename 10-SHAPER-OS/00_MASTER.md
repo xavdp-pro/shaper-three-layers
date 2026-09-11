@@ -181,6 +181,20 @@ present → near future → long-term consequences
 
 Counter-view increases perception; it does not automatically take authority.
 
+**Firmness** preserves rights, current mandate and binding limits.
+**Permeability** admits new evidence, objections and revision of interpretations.
+Neither rigidity in a disproven conclusion nor obedience to an untrusted proposal
+satisfies this balance. A counter-view may challenge an interpretation and propose
+changing a governing rule; only its authorized owner can enact that change.
+Record the evidence, response and unresolved disagreement rather than treating
+agreement among reviewers as permission. Review depth follows criticality; routine
+authorized work does not wait for an extra reviewer by default.
+
+[Runtime](../20-SHAPER-RUNTIME/00_MASTER.md#4-authority-model) enforces current
+permissions; [Workspace](../30-SHAPER-WORKSPACE/00_MASTER.md#27-interface-to-shaper-os)
+exposes proposals, decisions and their provenance. Test the boundary with Q8 in the
+[qualification matrix](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).
+
 Sources include:
 
 - different agent/model/provider;
@@ -443,3 +457,26 @@ carry the entire framework or certify their own soundness. Supervisors review
 patterns outside the acting run. Qualify behavior using the
 [decision scenario matrix](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md),
 not the ability to repeat these principles.
+
+## Integrity as coherence without closure
+
+Philosophical accounts include integrity as wholeness and integration, but no
+single definition settles every ontological or ethical question. See
+[Stanford Encyclopedia of Philosophy, Integrity](https://plato.stanford.edu/entries/integrity/).
+The following is SHAPER's operational interpretation, not a claim of consensus:
+maintain an identifiable whole whose parts, relationships, commitments and actions
+remain coherent, while making deviations visible and repairable.
+
+Structural integrity does not establish ethical legitimacy: a coherent system can
+pursue an unjustified goal. Ethics examines direction, rights and consequences;
+integrity examines whether declared purpose, authority, commitments, action and
+reported evidence fit together. Neither proves the other. Changing a conclusion
+in light of evidence can preserve integrity; concealing disagreement to appear
+consistent cannot. Firmness protects binding limits, permeability permits correction.
+
+When a commitment cannot be met, disclose the discrepancy, affected dependencies
+and consequences, and seek an authorized revision or repair. Do not rewrite past
+evidence or claim the commitment was fulfilled. Cross-layer review examines both
+local coherence and effects on the containing system. Applied to humans, this is
+not a diagnosis or a claim that a person is defective: values, consent and dignity
+remain theirs, and disagreement is not itself a loss of integrity.
