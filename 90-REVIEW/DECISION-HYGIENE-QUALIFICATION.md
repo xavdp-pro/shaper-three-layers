@@ -103,3 +103,17 @@ DH-09 wording refinement: operator approved reliability as the opening theme.
 Both introductions define it through commitments, deadlines, limits, evidence and
 correction; both conclusions ask what can be relied on under stated conditions.
 This framing adds no runtime claim or authority. Existing evidence limits remain.
+
+## DH-10 — Explain observation and grounded reporting
+
+Source: operator request for definitions before examples. Scope: human guide,
+V1.14 operating contract and removal of Rule 0C's unsupported zero-hallucination
+promise. Acceptance: define intention, expected result, sensor, tension,
+counter-view and response; separate error, unsupported generation, premature
+conclusion and deceptive behavior without inferring intent from falsity alone.
+Dependencies: existing OS sensor/counter-view definitions and Rules 0G/20.
+Three passes: preserve authority, provide an accessible nonjudgmental example,
+and expose faulty sensors and incomplete evidence. Documentation only; behavioral
+coverage remains unqualified. V1.14 link test (1/1), human-guide relative file links and whitespace checks
+passed. Independent read-only decision_review verdict: COHERENT, no blocking
+finding. No behavioral execution or deployment is claimed.

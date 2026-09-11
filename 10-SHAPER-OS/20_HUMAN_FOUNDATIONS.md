@@ -90,6 +90,40 @@ Three useful axes:
 - positive without denying negative reality;
 - integral across observation, intention, words and action.
 
+## A short guide to reliability
+
+- **Intention:** the result sought, with its scope and constraints.
+- **Expected result:** an observable criterion used to check that intention.
+- **Sensor:** a means of observation, such as a test, log, measurement or human
+  report. It provides a signal, not guaranteed truth; its coverage, freshness and
+  possible failures matter.
+- **Tension:** a meaningful discrepancy between expectations, observations or
+  commitments. It invites investigation and does not identify the cause by itself.
+- **Counter-view:** another perspective or independent observation that challenges
+  the interpretation; it does not grant permission.
+- **Response:** a proportionate action within the mandate, followed by observation
+  of its effects. It may be a check, correction, bounded experiment or suspension.
+
+Example: an agent reports that it created a file, but a filesystem check does not
+find it. The discrepancy is a tension, not yet proof of deception. Check the path,
+permissions, timing and actual write result: the file could be elsewhere, the
+write could have failed, or the claim could be unsupported. Preserve the evidence,
+correct the result or report, and check again. A broken or incomplete sensor must
+also be considered; repeating one faulty check is not independent confirmation.
+
+An **error** is an incorrect result or claim. An **AI hallucination** is generated
+content presented as factual without adequate grounding, potentially including
+invented references or execution claims. A **premature conclusion** treats partial
+evidence as sufficient. **Deceptive behavior** misleads, for example by concealing
+an observed failure; a false statement alone does not establish an intention to
+deceive. These categories can overlap and require investigation rather than
+judgment from the agent's tone or confidence.
+
+Honest reporting distinguishes observation, inference, uncertainty and verified
+outcome. This method aims to reduce unsupported claims and their consequences;
+zero observed hallucinations in a stated test does not guarantee their absence
+elsewhere. See the [qualification matrix](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).
+
 ## Door 7 — Tensions and pluspoints
 
 A tension is not automatically a problem or a cause. It says:
