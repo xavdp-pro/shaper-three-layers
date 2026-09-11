@@ -82,3 +82,19 @@ proves ethical legitimacy. No new runtime mechanism is claimed.
 Follow-up independent review: decision_review found no blocking conceptual issue
 in DH-07/DH-08, including integrity versus ethical legitimacy. Three-pass verdict:
 COHERENT for these documentation changes. Q1-Q9 remain NOT EXECUTED.
+
+## Introduction follow-up — DH-09
+
+Source: operator request to make practical benefits immediately visible. Scope:
+both repository introductions, covering human-agent, agent-agent, agent-human
+and human-human collaboration. Acceptance: all four relationships are visible,
+linked to governing detail and described as intended benefits, not measured gains.
+Three-pass review: no new authority; accessible organizational value; no runtime
+or hallucination-free guarantee. Documentation/link checks passed: V1.14 existing link test (1/1), architecture
+README file-link check and whitespace checks. Independent decision_review found
+no blocking issue in the introductions.
+
+DH-09 includes the operator's subsequent conclusion requirement: each README
+returns to the four intended benefits using scoped documentation evidence and
+explicitly unexecuted behavioral/unmeasured human outcomes. No achieved benefit
+is inferred from document review. Three-pass scope remains documentation only.

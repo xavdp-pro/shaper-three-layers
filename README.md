@@ -1,5 +1,26 @@
 # Shaper Organizational OS
 
+## Why this helps people work together
+
+The aim is more useful autonomy, fewer misunderstandings and costly mistakes,
+and clearer ways to correct them. A shared method makes intentions, limits,
+evidence and responsibilities easier to carry between people, agents and projects.
+
+| Relationship | Practical benefit sought |
+| --- | --- |
+| Human to agent | Express the desired result and scope without prescribing every step; distinguish verified work from assumptions |
+| Agent to agent | Share context and independent objections without turning a recommendation into permission |
+| Agent to human | Present results, uncertainty and decisions that need the person's judgment |
+| Human to human | Discuss facts, commitments and consequences without reducing disagreement to a judgment of the person |
+
+The same method can be reused in another team or universe while adapting its
+values, roles and permissions. People retain their choices; agents act within
+explicit mandates. Firm limits coexist with openness to evidence and correction.
+These are intended benefits, not measured guarantees: written principles alone
+neither remove hallucinations nor prove that a deployed system follows them.
+
+See the [decision foundation](10-SHAPER-OS/00_MASTER.md#decision-hygiene-ethics-time-and-experience) and [qualification scenarios](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).
+
 ## Dedicated architecture and documentation repository
 
 This repository isolates the architecture discussed for a portable, sovereign, agent-native operating environment for organizations.
@@ -90,3 +111,21 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 - [Shared inline audio players](40-TRANSVERSAL/15_WORKSPACE_INLINE_AUDIO_PLAYERS.md)
 
 - [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
+
+## Conclusion: what the collaboration framework establishes
+
+For the decision-hygiene additions reviewed on 2026-09-11, the evidence establishes
+explicit contracts for authority, contextual action, counter-view and integrity,
+with linked qualification scenarios. Documentation consistency and file links
+were checked, including an independent counter-view. See the
+[scope and evidence record](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md). This finding concerns those additions,
+not qualification of the entire repository or every deployed agent.
+
+The introduction's four benefits remain objectives to evaluate: fewer handoff
+misunderstandings between human and agent; useful agent-to-agent review without
+authority bypass; evidence-based reports to humans; and clearer human agreements.
+The nine behavioral scenarios have not been executed in this documentation work,
+and effects on human collaboration have not been measured. Therefore this review
+does not establish reduced error rates, improved daily autonomy or elimination
+of hallucinations. Future conclusions must name actual outcomes, conditions and
+remaining gaps rather than repeat these intended benefits as achievements.
