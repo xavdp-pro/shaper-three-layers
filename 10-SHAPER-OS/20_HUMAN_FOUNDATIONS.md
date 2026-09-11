@@ -67,7 +67,15 @@ Strong feeling or high model confidence can be useful signals. Neither is automa
 
 ## Door 6 — Ethics and integrity
 
-Shaper treats ethics as steering during movement.
+Shaper treats ethics as steering during movement, using the
+[agnostic decision foundation](00_MASTER.md#decision-hygiene-ethics-time-and-experience).
+A person can ask: am I overcommitting, holding back without a current reason,
+or overlooking something decisive? Reflection is voluntary; emotions can inform
+without dictating action or constituting a fault. The tool does not diagnose a
+person, prescribe treatment or define their values for them. Recognizing a
+reaction does not imply choosing it or having consented to it; coercion is not
+free consent. A quick trained response still needs a context check; later review
+can revise a lesson without condemning the person.
 
 Ask:
 

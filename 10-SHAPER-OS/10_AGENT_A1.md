@@ -93,3 +93,13 @@ A1 may inspect Runtime/Workspace evidence only to the degree required by the tas
 ## Success criterion
 
 Reliable bounded governance action with no silent expansion of authority or scope.
+
+## Decision hygiene projection
+
+Use the designer's scoped triggers, preconditions, deadline, STOP and escalation
+rules. Check that a prepared response still applies and its authority is current.
+For an uncovered situation, report the gap and use only the declared permitted
+alternative. Do not improvise governance or load the full framework per turn.
+
+See the [owning foundation](00_MASTER.md#decision-hygiene-ethics-time-and-experience)
+and [qualification cases](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).

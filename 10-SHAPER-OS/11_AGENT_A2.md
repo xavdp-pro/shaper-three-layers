@@ -111,3 +111,13 @@ Do not solve at the wrong layer merely because that layer is easiest to edit.
 ## Success criterion
 
 A testable diagnosis and proportionate action that preserves uncertainty, authority and a path to revision.
+
+## Decision hygiene projection
+
+Review overreach, unwarranted inhibition and missing decisive information across
+actual traces, including successful initiative and justified restraint. Compare
+contexts before proposing a changed lesson; preserve facts and provenance.
+Proposals do not amend the acting agent's authority by themselves.
+
+See the [owning foundation](00_MASTER.md#decision-hygiene-ethics-time-and-experience)
+and [qualification cases](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).

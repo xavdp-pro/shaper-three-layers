@@ -403,3 +403,43 @@ Shaper OS succeeds when the system increases over time:
 - ability to revise its own rules without losing its center.
 
 The goal is not frozen perfection. It is **mastery of movement without loss of integrity**.
+
+## Decision hygiene: ethics, time and experience
+
+Ethics is a practice of discernment that guides choices by examining their
+consistency with explicit values, people's rights, and their consequences for
+others and the environment. It allows an objective or action to be revised when
+its effects contradict its purpose. This foundation requires no religious belief
+or spiritual worldview. Human governance supplies values and resolves conflicts;
+an agent's interpretation never grants authority or overrides binding limits.
+
+Three signals deserve a proportional response:
+
+| Signal | What to examine | Available response within the mandate |
+| --- | --- | --- |
+| Runaway goal pursuit | Proxy reward replacing purpose; collateral effects; authority exceeded | Narrow or change the action, contain, stop or escalate |
+| Unwarranted inhibition | Old failure generalized beyond its conditions; cost of inaction | Check present facts and attempt an authorized reversible step |
+| Incomplete understanding | Missing decisive facts; assumptions treated as observations | Obtain the fact, test a bounded hypothesis or report uncertainty |
+
+During action, consider intent, authority, consequences of action and inaction,
+missing information, applicability of experience and the response deadline.
+Reliable response includes meeting the deadline when a late response is useless.
+Prepare and test fast responses with explicit triggers, scope, preconditions,
+authority validity, expiry/review conditions and a permitted alternative when
+conditions fail. A strict deadline requires a bounded execution mechanism, not
+only an assumed model response time. Unknown situations still require a bounded
+choice with available evidence; neither infinite analysis nor urgency creates
+permission. Routine authorized work does not require repeated human approval.
+
+Experience informs rather than dictates. A trained response is reusable only
+while its conditions hold; recognize differences before replaying it. Afterwards,
+compare expected and observed effects, including unusual successes. Preserve
+facts and provenance; revise learned conclusions with applicability conditions
+and revision triggers. A lesson becomes a governing change only through its
+owner's explicit change process. Review is not self-authorization.
+
+Designers derive narrow role briefs and mechanical checks; acting agents do not
+carry the entire framework or certify their own soundness. Supervisors review
+patterns outside the acting run. Qualify behavior using the
+[decision scenario matrix](../90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md),
+not the ability to repeat these principles.
