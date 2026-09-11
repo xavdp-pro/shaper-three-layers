@@ -1,6 +1,13 @@
 # Shaper Organizational OS
 
-## Why this helps people work together
+## Shaper: building reliable collaboration between humans and agents
+
+Reliability means being able to rely on what is done, knowing what remains
+uncertain, and correcting course when reality contradicts expectations. It
+connects commitments, useful response deadlines, authority boundaries, verified
+results and learning from discrepancies.
+
+### Why this helps people work together
 
 The aim is more useful autonomy, fewer misunderstandings and costly mistakes,
 and clearer ways to correct them. A shared method makes intentions, limits,
@@ -112,7 +119,11 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 
 - [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
 
-## Conclusion: what the collaboration framework establishes
+## Conclusion: what can be relied on today?
+
+What is supported by evidence, under which conditions, and what remains to be
+verified? These questions govern the conclusion; reliability is demonstrated
+within a stated scope, not claimed without limits.
 
 For the decision-hygiene additions reviewed on 2026-09-11, the evidence establishes
 explicit contracts for authority, contextual action, counter-view and integrity,

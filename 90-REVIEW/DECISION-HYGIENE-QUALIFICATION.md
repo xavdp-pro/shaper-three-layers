@@ -98,3 +98,8 @@ DH-09 includes the operator's subsequent conclusion requirement: each README
 returns to the four intended benefits using scoped documentation evidence and
 explicitly unexecuted behavioral/unmeasured human outcomes. No achieved benefit
 is inferred from document review. Three-pass scope remains documentation only.
+
+DH-09 wording refinement: operator approved reliability as the opening theme.
+Both introductions define it through commitments, deadlines, limits, evidence and
+correction; both conclusions ask what can be relied on under stated conditions.
+This framing adds no runtime claim or authority. Existing evidence limits remain.
