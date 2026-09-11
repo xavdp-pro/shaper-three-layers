@@ -52,6 +52,12 @@ Preserved functions map to:
 - structural materialization → **Maker**;
 - standing automated execution → **automation actor under mandate**.
 
+This deprecation concerns the architectural role vocabulary in this repository.
+It does not remove a software brick named `Maestro` from the engineering kit or
+instruct an implementer to rename/delete it. Changing that implementation requires
+its own contract and migration review. Map its actual responsibilities to these
+roles rather than equating a component name with a governance function.
+
 Do not copy old names into new implementation merely because they exist in a historical document.
 
 ## “OS” in marketing

@@ -20,6 +20,25 @@ Helm may make shaping feel immediate; live appearance never permits bypassing au
 
 The deployed Governor/Maker pattern remains compatible: Governor holds delegated queues without broad host access; Maker alone materializes approved structural changes; parent/root levels repair compromised children; human plus directly controlled root-capable agents remain ultimate authority.
 
+## Coordination is a role, not an outbound execution privilege
+
+In the SHAPER engineering mechanism, coordination is expressed through the
+ledger and dated desired state. Makers retrieve authorized work, execute the
+permitted materialization recipes and report observed facts. “Governor plans” in
+the diagram does not mean that the governor connects to hosts, possesses their
+private keys or runs infrastructure commands. “Maker” names an execution role;
+it does not by itself require an LLM or authorize autonomous policy decisions.
+
+An experimental PodMesh **manager universe** is a deployment package for control
+services, not a new governance layer or a replacement for this separation. Its
+registry, DNS and replicated-service design are targets under investigation;
+placing these components together does not grant broader authority or prove HA.
+PodMesh provides local runtime operations. See its
+[experimental scope](https://github.com/xavdp-pro/podmesh/blob/main/docs/EXPERIMENTAL-SCOPE.md)
+for the distinction between authorized Podman research and current SHAPER runtime
+conformance. The eventual integration requires qualification; this architecture
+text does not amend Rule 11 or extend the host-family enumeration.
+
 Separate User and Steward applications are useful defense in depth. Runtime authorization and cryptographic identity remain the real boundary.
 
 ## Fractal observation and parent-led correction
