@@ -2,7 +2,7 @@
 
 The canonical layers are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper Linux is optional. Enterprise OS is the business reference manifestation across the layers and Packages.
 
-**Routes:** start at [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) for layer masters, A1/A2/A3 guides, and links to the executable kit. This repository does **not** record per-agent git credit; that lives in [SHAPER-OS-V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and commit trailers.
+**Routes:** start at [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) for layer masters, A1/A2/A3 guides, and links to the executable kit. Team credit: [`AUTHORS.md`](AUTHORS.md) here; [V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) for the kit; commit trailers per Rule 2 in the executable repository.
 
 ## Before acting
 1. Identify the owning layer and cross-layer contracts.

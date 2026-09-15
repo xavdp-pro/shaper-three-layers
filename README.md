@@ -48,7 +48,7 @@ Runtime responsibilities, Workspace shell) without mixing it with install steps.
 | Where do I start as an agent or architect? | [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) and [`AGENTS.md`](AGENTS.md) |
 | How do I deploy and prove a universe? | [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — `AGENTS.md`, runbook, `software/universes/univ-base/` |
 | How do the three strata fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
-| Who gets credit on the executable kit? | V1.14 [`AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and `Co-Authored-By` trailers (not duplicated here) |
+| Who gets credit? | This repo [`AUTHORS.md`](AUTHORS.md); executable kit [V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and `Co-Authored-By` trailers |
 
 ## The three primary layers
 
@@ -92,7 +92,7 @@ Canonical file names per layer: `10_AGENT_A1.md`, `11_AGENT_A2.md`, `12_AGENT_A3
 
 1. **Delivery and proof** — one shared feature inventory per perimeter ([`90-REVIEW/SCOPE-FEATURE-INVENTORY.md`](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)); agents report against the same feature IDs. Do not create a disconnected checklist per engine.
 2. **Cognitive role** — pick the A1, A2, or A3 guide for the owning layer; stay within mandate and escalate across depth or authority boundaries.
-3. **Executable credit** — commits, tests, and named agents on the [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) kit only (`AUTHORS.md`, Rule 2 trailers). This documentation repository does not mirror that roster.
+3. **Executable credit** — commits, tests, and Rule 2 trailers on the [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) kit; documentation credit on [`AUTHORS.md`](AUTHORS.md) in each repository.
 
 ## Documentation method
 
@@ -148,6 +148,8 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 - [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
 
 - [Documentation session handoff checklist](90-REVIEW/DOC-HANDOFF-CHECKLIST.md)
+
+- [Authors and agent roster](AUTHORS.md)
 
 - [Agent and architect routes](00-META/06_AGENT_ROUTES.md)
 
