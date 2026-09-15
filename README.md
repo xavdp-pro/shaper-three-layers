@@ -1,5 +1,7 @@
 # Shaper Organizational OS
 
+Licensed under [CC BY-SA 4.0](LICENSE). See [NOTICE.md](NOTICE.md) and [AUTHORS.md](AUTHORS.md) for ownership, scope, and provenance.
+
 ## Shaper: building reliable collaboration between humans and agents
 
 Reliability means being able to rely on what is done, knowing what remains
