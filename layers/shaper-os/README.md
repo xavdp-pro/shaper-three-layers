@@ -1,4 +1,7 @@
-# Shaper OS
+# Shaper OS (bootstrap snapshot — not canonical)
+
+> **Redirect:** edit [`10-SHAPER-OS/`](../../10-SHAPER-OS/) and [`00-META/06_AGENT_ROUTES.md`](../../00-META/06_AGENT_ROUTES.md).
+> This `layers/` copy is retained for lineage only. See [`layers/README.md`](../README.md).
 
 **Layer type:** adaptive cognitive and governance kernel.
 

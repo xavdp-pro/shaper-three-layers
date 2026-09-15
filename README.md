@@ -45,8 +45,10 @@ Runtime responsibilities, Workspace shell) without mixing it with install steps.
 
 | Question | Read |
 | :--- | :--- |
+| Where do I start as an agent or architect? | [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) and [`AGENTS.md`](AGENTS.md) |
 | How do I deploy and prove a universe? | [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — `AGENTS.md`, runbook, `software/universes/univ-base/` |
 | How do the three strata fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
+| Who gets credit on the executable kit? | V1.14 [`AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and `Co-Authored-By` trailers (not duplicated here) |
 
 ## The three primary layers
 
@@ -84,6 +86,14 @@ Every primary layer is documented at five reasoning depths:
 
 Agent depth is **not** authority. Human documentation depth is **not** privilege. Permissions are governed separately.
 
+Canonical file names per layer: `10_AGENT_A1.md`, `11_AGENT_A2.md`, `12_AGENT_A3.md` under `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, and `30-SHAPER-WORKSPACE/`. See the [agent route table](00-META/06_AGENT_ROUTES.md).
+
+### Three kinds of contribution (do not collapse them)
+
+1. **Delivery and proof** — one shared feature inventory per perimeter ([`90-REVIEW/SCOPE-FEATURE-INVENTORY.md`](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)); agents report against the same feature IDs. Do not create a disconnected checklist per engine.
+2. **Cognitive role** — pick the A1, A2, or A3 guide for the owning layer; stay within mandate and escalate across depth or authority boundaries.
+3. **Executable credit** — commits, tests, and named agents on the [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) kit only (`AUTHORS.md`, Rule 2 trailers). This documentation repository does not mirror that roster.
+
 ## Documentation method
 
 Every important concept should be teachable through:
@@ -102,7 +112,7 @@ And every substantial concept should answer:
 
 ## Repository map
 
-- `00-META/` — scope, pedagogy, taxonomy, cross-layer architecture and open decisions.
+- `00-META/` — scope, pedagogy, taxonomy, cross-layer architecture, open decisions, and [`06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md).
 - `10-SHAPER-OS/` — living adaptive governance kernel as applied to this product.
 - `20-SHAPER-RUNTIME/` — operational truth, security, identity, agents, objects and services.
 - `30-SHAPER-WORKSPACE/` — Flutter/Dart portable organizational workspace.
@@ -121,7 +131,11 @@ The complete enterprise-facing proposition is canonicalized under `50-ENTERPRISE
 
 The unchanged September 2026 source pack is preserved under `99-SOURCE-ARCHIVE/`. Use `START-HERE.md` for reading routes.
 
-The earlier `layers/` tree is retained only as an initial bootstrap snapshot; the numbered directories are canonical.
+The earlier `layers/` tree is retained only as an initial bootstrap snapshot; the numbered directories are canonical. See [`layers/README.md`](layers/README.md) before editing anything under `layers/`.
+
+## Repository maintenance
+
+- [`scripts/check-markdown-links.sh`](scripts/check-markdown-links.sh) — verify relative links in `*.md` (run from repo root after doc edits).
 
 ## Shared interface contracts
 
@@ -132,6 +146,12 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 - [Shared inline audio players](40-TRANSVERSAL/15_WORKSPACE_INLINE_AUDIO_PLAYERS.md)
 
 - [Scope-first feature inventory and delivery checklist](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)
+
+- [Documentation session handoff checklist](90-REVIEW/DOC-HANDOFF-CHECKLIST.md)
+
+- [Agent and architect routes](00-META/06_AGENT_ROUTES.md)
+
+- [Agent routes navigation review (2026-09-15)](90-REVIEW/AGENT-ROUTES-NAVIGATION-REVIEW-2026-09-15.md)
 
 ## Conclusion: what can be relied on today?
 

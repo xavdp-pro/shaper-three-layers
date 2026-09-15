@@ -1,4 +1,6 @@
-# Shaper Runtime
+# Shaper Runtime (bootstrap snapshot — not canonical)
+
+> **Redirect:** [`20-SHAPER-RUNTIME/`](../../20-SHAPER-RUNTIME/) and [`layers/README.md`](../README.md).
 
 **Layer type:** operational and technical substrate.
 

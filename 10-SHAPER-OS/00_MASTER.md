@@ -480,3 +480,14 @@ evidence or claim the commitment was fulfilled. Cross-layer review examines both
 local coherence and effects on the containing system. Applied to humans, this is
 not a diagnosis or a claim that a person is defective: values, consent and dignity
 remain theirs, and disagreement is not itself a loss of integrity.
+
+## Further reading (this layer)
+
+| Audience | Document |
+| --- | --- |
+| Agent A1 | [`10_AGENT_A1.md`](10_AGENT_A1.md) |
+| Agent A2 | [`11_AGENT_A2.md`](11_AGENT_A2.md) |
+| Agent A3 | [`12_AGENT_A3.md`](12_AGENT_A3.md) |
+| Human Foundations | [`20_HUMAN_FOUNDATIONS.md`](20_HUMAN_FOUNDATIONS.md) |
+| Human Steward | [`21_HUMAN_STEWARD.md`](21_HUMAN_STEWARD.md) |
+| Cross-repo agent routes | [`00-META/06_AGENT_ROUTES.md`](../00-META/06_AGENT_ROUTES.md) |

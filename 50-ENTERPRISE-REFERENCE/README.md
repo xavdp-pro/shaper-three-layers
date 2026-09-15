@@ -14,7 +14,9 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 - Company governance surfaces: `15_DIRECTION_DECISIONS_AND_MANDATES.md` separates
   social discussions, company direction and authoritative decisions/mandates,
-  including scope-specific onboarding for new agents.
+  including scope-specific onboarding for new agents (section *How a new agent
+  learns the current company decisions* — permission-filtered views, not a full
+  context dump).
 
 - Cross-module navigation: `14_UNIFIED_QUICK_SEARCH.md` defines aggregated,
   permission-filtered object search and reuse of Xavier's existing implementation.
@@ -29,6 +31,12 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 - Future owner: `02_HUMAN_FROM_DOING_TO_STEERING.md` → `09_FUTURE_OWNER_AND_TESTER_JOURNEY.md` → demo and Helm scenarios.
 - Tester: `09_FUTURE_OWNER_AND_TESTER_JOURNEY.md` → `11_VALIDATION_AND_ACCEPTANCE_PROTOCOL.md` → checklists.
-- Architect/agent: reinterpreted master → agent guide → functional graph → Helm model → validation protocol.
+- Architect/agent: [`00-META/06_AGENT_ROUTES.md`](../00-META/06_AGENT_ROUTES.md) →
+  [`AGENTS.md`](../AGENTS.md) → layer master and A1/A2/A3 guide →
+  [`03_AGENT_IMPLEMENTATION_GUIDE.md`](03_AGENT_IMPLEMENTATION_GUIDE.md) →
+  functional graph → Helm model →
+  [`11_VALIDATION_AND_ACCEPTANCE_PROTOCOL.md`](11_VALIDATION_AND_ACCEPTANCE_PROTOCOL.md)
+  and [`SCOPE-FEATURE-INVENTORY.md`](../90-REVIEW/SCOPE-FEATURE-INVENTORY.md) for
+  implementation perimeters.
 
 The original September 2026 three-pass pack is retained unchanged under `99-SOURCE-ARCHIVE/`, making omissions and semantic drift auditable.

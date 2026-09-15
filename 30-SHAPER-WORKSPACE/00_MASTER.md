@@ -417,3 +417,12 @@ This includes:
 A successful Workspace makes the user feel that they are working **inside their organization**, not shuttling between disconnected software products.
 
 The user can change host device without rebuilding their working world, delegate to agents without losing traceability, use the Web and specialist native apps without making them the center of the system, and adapt applications without sacrificing governance.
+
+## Further reading (this layer)
+
+| Audience | Document |
+| --- | --- |
+| Agent A1 | [`10_AGENT_A1.md`](10_AGENT_A1.md) |
+| Agent A2 | [`11_AGENT_A2.md`](11_AGENT_A2.md) |
+| Agent A3 | [`12_AGENT_A3.md`](12_AGENT_A3.md) |
+| Cross-repo agent routes | [`00-META/06_AGENT_ROUTES.md`](../00-META/06_AGENT_ROUTES.md) |

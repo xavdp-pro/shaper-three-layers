@@ -1,4 +1,6 @@
-# Shaper Workspace
+# Shaper Workspace (bootstrap snapshot — not canonical)
+
+> **Redirect:** [`30-SHAPER-WORKSPACE/`](../../30-SHAPER-WORKSPACE/) and [`layers/README.md`](../README.md).
 
 **Layer type:** human operating environment and application surface.
 

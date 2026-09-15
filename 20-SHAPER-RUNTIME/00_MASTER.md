@@ -511,3 +511,12 @@ The Runtime succeeds when the same organization can be safely projected onto mul
 - agent governance;
 - recovery;
 - ability to change without corrupting historical meaning.
+
+## Further reading (this layer)
+
+| Audience | Document |
+| --- | --- |
+| Agent A1 | [`10_AGENT_A1.md`](10_AGENT_A1.md) |
+| Agent A2 | [`11_AGENT_A2.md`](11_AGENT_A2.md) |
+| Agent A3 | [`12_AGENT_A3.md`](12_AGENT_A3.md) |
+| Cross-repo agent routes | [`00-META/06_AGENT_ROUTES.md`](../00-META/06_AGENT_ROUTES.md) |

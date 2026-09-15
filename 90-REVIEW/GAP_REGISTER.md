@@ -11,6 +11,8 @@
 | Three-layer responsibility split | INTEGRATED | OS / Runtime / Workspace defined |
 | Shaper Linux placement | INTEGRATED | Optional host, transversal |
 | A1/A2/A3 preserved | INTEGRATED | Separate guide per layer |
+| Agent route hub and master → A* links | INTEGRATED | `00-META/06_AGENT_ROUTES.md`, master footers, `layers/README.md` redirect |
+| `layers/` vs numbered directories | INTEGRATED | Bootstrap snapshot; canonical edit targets documented |
 | Agent intelligence vs authority | INTEGRATED | Explicit invariant |
 | Two human pedagogical depths | INTEGRATED | Foundations / Steward |
 | Old human H0-H3 modes | INTEGRATED | Retained as R0-R3 situation modes |

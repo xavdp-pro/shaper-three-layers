@@ -10,4 +10,7 @@
 Future-owner/tester journey → validation protocol → implementation checklists → gap register.
 
 ## Agent or architect
-`AGENTS.md` → owning layer master → `40-TRANSVERSAL/` contracts → `90-REVIEW/` → source archive only for lineage checks.
+`AGENTS.md` → [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) → owning layer master and matching `10/11/12_AGENT_A*.md` → `40-TRANSVERSAL/` contracts → `90-REVIEW/` (inventory, three-pass closeout, [`DOC-HANDOFF-CHECKLIST.md`](90-REVIEW/DOC-HANDOFF-CHECKLIST.md)) → `99-SOURCE-ARCHIVE/` only for lineage checks.
+
+## Executable kit (code and proof)
+[SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — not this repository.
