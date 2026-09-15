@@ -34,6 +34,20 @@ This repository isolates the architecture discussed for a portable, sovereign, a
 
 It is deliberately **not** the general Shaper OS repository, not the Enterprise OS application catalogue, and not a Linux distribution repository. Its purpose is to define the system that lets an organization keep the same work environment, identity, context, applications, agents and governance while the host device may change between Windows, macOS, Linux, mobile, web, or an optional sovereign Shaper Linux host.
 
+## Executable companion (Shaper OS kit)
+
+The **runnable** Shaper OS tree — bricks, universes, `RULES.md`, tests, deploy
+and proof scripts — lives in
+[**`SHAPER-OS-V1.14`**](https://github.com/xavdp-pro/SHAPER-OS-V1.14) on GitHub.
+Use that repository to clone, build, and prove a universe (for example `univ-base`).
+Use **this** repository when you need the organizational map (governance kernel,
+Runtime responsibilities, Workspace shell) without mixing it with install steps.
+
+| Question | Read |
+| :--- | :--- |
+| How do I deploy and prove a universe? | [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — `AGENTS.md`, runbook, `software/universes/univ-base/` |
+| How do the three strata fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
+
 ## The three primary layers
 
 ```text
