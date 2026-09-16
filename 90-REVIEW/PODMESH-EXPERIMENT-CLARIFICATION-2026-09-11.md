@@ -65,3 +65,15 @@ Runtime integration and the broader canon reconciliation remain **OPEN**. The
 supplied Claude critique provided an external input, but no independent reviewer
 has reviewed these new edits. Static diff and local-link checks are the validation
 for this documentation-only patch; no new operational proof is claimed.
+
+## Addendum — 16 September 2026
+
+Disposition 1 is superseded. Rule 11 of SHAPER OS V1.14 was amended on
+16 September 2026 by operator decision: a universe has one of two shapes, `lxc`
+(a standard Debian or Proxmox LXC) or `nested` (a rootful Podman container
+carrying its own Podman and its bricks); a fourth host family `nested` exists;
+Docker is never a runtime; PodMesh is named as the optional manager of `nested`
+universes and never as a source of authority. The conformance boundary this
+review described no longer exists. The evidence limits it recorded (EXP-02 to
+EXP-06) still hold, and the canon repeats the measured migration bounds rather
+than extending them.

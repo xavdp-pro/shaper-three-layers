@@ -35,9 +35,13 @@ registry, DNS and replicated-service design are targets under investigation;
 placing these components together does not grant broader authority or prove HA.
 PodMesh provides local runtime operations. See its
 [experimental scope](https://github.com/xavdp-pro/podmesh/blob/main/docs/EXPERIMENTAL-SCOPE.md)
-for the distinction between authorized Podman research and current SHAPER runtime
-conformance. The eventual integration requires qualification; this architecture
-text does not amend Rule 11 or extend the host-family enumeration.
+for what its evidence establishes. Rule 11 of SHAPER OS V1.14, amended on
+16 September 2026 by operator decision, admits nested Podman universes (the
+`nested` shape and host family) beside LXC universes, names PodMesh as their
+optional manager, and never Docker. The integration itself still requires
+qualification. PodMesh's active manager replica holds a lease over PodMesh
+operations; it is not the Governor of this table and gains no coordination
+authority from its name.
 
 Separate User and Steward applications are useful defense in depth. Runtime authorization and cryptographic identity remain the real boundary.
 

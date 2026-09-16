@@ -7,7 +7,8 @@ current development Registry a production backup service.
 ## Intent and ownership
 
 Expose a coherent **Universe backups / recovery** view for restoring a production
-assembly of Podman services. Reuse the canonical Shaper names, exact image
+assembly of Podman services, whatever holds the universe — an LXC or, since Rule
+11's amendment of 16 September 2026, a `nested` Podman container. Reuse the canonical Shaper names, exact image
 digests and universe manifest. The objective is recovery of an organizational
 environment, including its data and authority, with measured restoration time.
 
