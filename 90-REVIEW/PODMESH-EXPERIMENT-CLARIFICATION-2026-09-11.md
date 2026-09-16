@@ -17,7 +17,7 @@ The report's host observations have not been independently rerun in this review.
 
 | ID | Requirement and acceptance | Delivery |
 | --- | --- | --- |
-| EXP-01 | Separate research authorization from current runtime conformance | PodMesh experimental scope linked from intent, README and three-layer mapping; no canon amendment. |
+| EXP-01 | Separate research authorization from current runtime conformance | PodMesh experimental scope linked from intent, README and three-layer mapping; no canon amendment (11 September 2026 — superseded by the addendum of 16 September 2026 below). |
 | EXP-02 | Describe current progress without upgrading probe evidence | Stale no-service/no-restore statements corrected; direct restore remains a reported fixture probe, not destination API acceptance. |
 | EXP-03 | Preserve ledger/pull roles and secret/ownership boundaries | Mapping now explains coordination through desired state and makers; experimental manager is not new authority. |
 | EXP-04 | Give the continuing agent actionable boundaries | Experimental scope includes agent instructions, next destination acceptance cases and prohibited shortcuts. |
