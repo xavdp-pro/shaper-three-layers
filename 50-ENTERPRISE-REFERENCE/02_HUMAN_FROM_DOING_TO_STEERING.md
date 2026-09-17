@@ -131,3 +131,5 @@ A light maturity indicator can show which concepts the user has already encounte
 This is not a score of intelligence.
 
 It is a map of capabilities the user has learned to use.
+
+The same map, proven rather than displayed, is **pilot training**: guided missions in a formal demo universe validate each pilot level before Helm executes that level in production. See the [future owner journey](09_FUTURE_OWNER_AND_TESTER_JOURNEY.md#pilot-training-proving-each-level). It uses missions, never points or rankings.

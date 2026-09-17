@@ -10,6 +10,7 @@ Internal complexity must not leak into ordinary use without a functional reason.
 
 ```text
 Workspace
+Helm
 Spaces
 People
 Agents
@@ -34,6 +35,7 @@ Tasks
 Exceptions
 Automation
 History
+Pilot level
 ```
 
 ## Steward projection
@@ -42,7 +44,8 @@ Adds canonical architecture:
 
 ```text
 Universe
-Root Authority
+Jurisdiction
+Root Authority (master root, jurisdiction root)
 Governor
 Maker
 Runtime
@@ -126,6 +129,10 @@ review_conditions:
 | Tension | Alert / inconsistency / thing to inspect |
 | Pluspoint | Improvement / unusual success |
 | Root Authority | System administration / Steward control |
+| Jurisdiction | What you are in charge of |
+| Jurisdiction root | Full control of your own system |
+| Master root | Invisible outside the founding tandem's tools |
+| Pilot level | Your level: see and learn, prepare and propose, act within a mandate, shape your system |
 
 ## Rule
 

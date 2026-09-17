@@ -2,14 +2,14 @@
 
 | Component | Responsibility | Must not silently become |
 | --- | --- | --- |
-| Helm | conversational pilotage and contextual interaction | root authority or universal executor |
-| Governor | routing, coordination, delegation and escalation | source of human intent |
-| Maker | approved structural/infrastructure materialization | autonomous product owner |
+| Helm | conversational pilotage within one jurisdiction and one pilot level | root authority or universal executor |
+| Governor | routing, coordination, delegation and escalation, under the master root alone | source of human intent, or an organ a jurisdiction root commands |
+| Maker | approved structural/infrastructure materialization, under the master root alone | autonomous product owner |
 | Runtime authority | capability, permission, mandate, policy, evidence | a UI convention |
-| Steward | human governance of major scopes | manual bottleneck for all low-risk work |
+| Steward | human governance of major scopes, as the human of a root tandem | manual bottleneck for all low-risk work |
 
 ```text
-Steward request → Helm clarifies → declarative diff
+Pilot request → Helm clarifies within jurisdiction and pilot level → declarative diff
 → Runtime authority/impact check → Governor plans
 → Maker materializes in DEV/TEST → counter-view/tests
 → authorized promotion → Workspace update → observe
@@ -17,6 +17,8 @@ Steward request → Helm clarifies → declarative diff
 ```
 
 Helm may make shaping feel immediate; live appearance never permits bypassing authority, tests, migration or data preservation.
+
+A jurisdiction root shapes through this chain like any pilot. Its request reaches the Governor and a Maker as approved work; it never commands them. The Governor and the Makers belong to the master root's own universes and take direction from it alone. A feature that no class offers becomes a change to the class, made by its maker tandem, never an exception inside one instance.
 
 The deployed Governor/Maker pattern remains compatible: Governor holds delegated queues without broad host access; Maker alone materializes approved structural changes; parent/root levels repair compromised children; human plus directly controlled root-capable agents remain ultimate authority.
 

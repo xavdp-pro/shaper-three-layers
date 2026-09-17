@@ -11,6 +11,13 @@ A Steward does not merely administer accounts. The Steward protects the conditio
 
 The human retains final responsibility for systemic powers. The Root Agent extends perception, memory, analysis and execution; it does not become a separate sovereign root by default.
 
+Root Authority exists at two strata, never more:
+
+- **Master root.** The founding tandem at the top of the fractal holds it. It reaches underneath every universe to its pods and hosts, directs the Governor and the Makers alone, keeps matrices and backup contracts, and grants every jurisdiction.
+- **Jurisdiction root.** A Steward given a jurisdiction holds it with their agent, through Helm: a client at the Helm of their Workspace or Vox. It has full power inside that jurisdiction, down to the pods of its universes. It never reaches a host, the Governor, a Maker, a class repository, another jurisdiction or its own backup contract.
+
+A jurisdiction root may grant a narrower jurisdiction inside its own, never a wider one. See [Naming and Deprecations](../00-META/05_NAMING_AND_DEPRECATIONS.md#strata-of-authority-17-september-2026).
+
 ## 2. What the Steward governs
 
 The Steward should be able to reason about:

@@ -6,6 +6,13 @@ Helm is the **conversational operating interface for organizational pilotage**. 
 
 Helm is not the database, policy engine, universal orchestrator, infrastructure root or unrestricted code generator.
 
+Helm is the same interface for every pilot, on the web or the mobile web, in text or by voice. Two settings bound it, and no third:
+
+- **Jurisdiction.** The universes the pilot is in charge of, down to their constituent pods. Helm sees nothing and answers for nothing outside it. The master root and a client's jurisdiction root use the same Helm over different jurisdictions.
+- **Pilot level.** What the person has proven in pilot training for that class of universe, from E0 to E5 ([journey](09_FUTURE_OWNER_AND_TESTER_JOURNEY.md#pilot-training-proving-each-level)). Root and mandate say what the pilot may do. The level says what Helm executes directly for that person.
+
+Above the validated level, Helm prepares the request and routes it for validation, or offers the training that proves the level. It never acts on the assumption that authority implies competence.
+
 ## Canonical chain
 
 ```text
@@ -33,16 +40,20 @@ Historical Maestro functions map mainly to Governor, workflow execution and spec
 | Pilot | attention, trends, tensions, pluspoints | advisory | observations separated from recommendations |
 | Propose automation | detect stable repetition | proposal | pattern, exceptions, owner, review |
 | Execute mandate | run approved workflow | bounded automation | mandate, trace, STOP and exceptions |
-| Shape Workspace | change a declarative app/surface | Steward shaping | diff, tests, migration, rollback |
+| Shape Workspace | change a declarative app/surface; add, configure or remove a feature the class offers | jurisdiction root shaping | diff, tests, migration, rollback |
 
 ## Visible modes
 
-1. Observe.
-2. Assist and prepare.
-3. Delegate once.
-4. Approval workflow.
-5. Standing mandate.
-6. Governed shaping.
+| Visible mode | Pilot level that unlocks it |
+| --- | --- |
+| Observe | E1 — Ask Helm |
+| Assist and prepare | E2 — Delegate once |
+| Delegate once | E2 — Delegate once |
+| Approval workflow | E3 — Pilot |
+| Standing mandate | E4 — Standing mandate |
+| Governed shaping | E5 — Shape the environment, and a jurisdiction root or an explicit shaping mandate |
+
+E0, familiar work without an agent, needs no Helm mode. A validated level never replaces authority: a pilot at E5 without root or mandate shapes nothing.
 
 Conversation must never silently expand authority when the mode changes.
 

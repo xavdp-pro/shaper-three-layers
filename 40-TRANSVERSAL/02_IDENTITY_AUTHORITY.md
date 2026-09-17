@@ -30,6 +30,13 @@ explicit policies / break-glass procedure
 ROOT AUTHORITY
 ```
 
+The same composition holds at two strata. The **master root** is the Root
+Authority at the top of the fractal: it alone directs the Governor and the
+Makers and grants jurisdictions. A **jurisdiction root** is the Root Authority of
+one granted jurisdiction: full power inside, none over hosts, Governor, Makers
+or other jurisdictions. Helm acts for either within its jurisdiction and the
+person's pilot level; neither setting ever widens the other.
+
 ## Authority composition
 
 Effective permission can depend on:

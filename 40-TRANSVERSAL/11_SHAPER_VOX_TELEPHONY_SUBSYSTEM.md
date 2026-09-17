@@ -47,8 +47,10 @@ Telephony is not an isolated side tool: it is an operational ingress and a prima
 
 ## 2. Naming Standard: Shaper Vox
 
-In line with Shaper OS terminology (*KovZu*, *Maestro*, *Zephir*, *Astra*):
-- **Ecosystem Name**: **Shaper Vox** (or *Shaper Voice OS*).
+Names, as sealed on 17 September 2026 ([Naming and Deprecations](../00-META/05_NAMING_AND_DEPRECATIONS.md#product-names-and-their-layers)):
+- **Public product name**: **SHAPER Vox**. `Shaper Voice OS` is retired.
+- **Class repository**: `univ-vox-core`. Each client is an instance of that class, never a new class.
+- **Human interface**: the owner of a Vox instance steers it through **Helm**, as the jurisdiction root of that instance. The Vox Cockpit below is a Workspace-layer module, not a second conversational interface.
 - **Proposed generic brick roles** (names remain implementation choices until
   their manifests and build contexts are accepted):
   - `brick-telephony-pbx` (`:5060`, `:8088`): PJSIP/Asterisk engine, trunk registration, dialplan execution.

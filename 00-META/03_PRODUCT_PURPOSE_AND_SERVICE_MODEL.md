@@ -52,6 +52,8 @@ organizational or system scope. In ordinary product language, **Organization**
 is clearer for a company customer. An Organization may be a Universe; a Cell may
 be a child Universe when its autonomy, data and policy boundary require it.
 
+Any of these scopes can be granted as a **jurisdiction**: the universes a pilot is in charge of through Helm. A client given an Organization, or a Cell inside it, holds the **jurisdiction root** of that scope; the founding tandem at the top of the fractal holds the **master root** ([strata](05_NAMING_AND_DEPRECATIONS.md#strata-of-authority-17-september-2026)).
+
 A Portfolio is not a parent authority by default. It receives only the
 information and control each Organization explicitly discloses through policy,
 role and mandate. Its purpose is stewardship and orientation, not automatic

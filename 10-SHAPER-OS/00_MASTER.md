@@ -229,6 +229,8 @@ This is why **A1/A2/A3 cognitive depth and permissions are separate axes**.
 
 The practical top is **Root Authority**, normally a human Steward working with directly controlled root-capable agents.
 
+At the top of the whole fractal this is the **master root**. A client given Helm over their own universes holds a **jurisdiction root**: Root Authority inside that jurisdiction, without power over hosts, Governor or Makers.
+
 Root Authority must be able to:
 
 - stop automation;

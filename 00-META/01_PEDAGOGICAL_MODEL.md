@@ -61,6 +61,16 @@ FEEDBACK / LEARNING
 
 The reader first experiences why a concept is needed, then receives its name.
 
+## Pilot path
+
+A person at the Helm climbs six pilot levels, from familiar work (E0) to shaping the environment (E5). Each level is proven by pilot training in a formal demo universe, where the three comprehension checks become missions:
+
+- **Words.** The pilot names the objects, roles and authority involved before acting.
+- **Gradient.** A level is useful on its own before the next one opens.
+- **Reality.** Every mission ends on observable events, a planted failure and the evidence read back.
+
+The full design lives in the [future owner journey](../50-ENTERPRISE-REFERENCE/09_FUTURE_OWNER_AND_TESTER_JOURNEY.md#pilot-training-proving-each-level).
+
 ## Human Steward path
 
 The Steward-level documents add:
