@@ -1,6 +1,6 @@
 > Canonical integration note
 >
-> Enterprise OS is preserved here as the business reference manifestation of Shaper. It is not a fourth technical layer: governance belongs to Shaper OS, durable truth and execution to Runtime, human interaction to Workspace, and domain specialization to Packages.
+> SHAPER Enterprise (historically "Enterprise OS", the name this reference corpus still uses) is preserved here as the business reference manifestation of Shaper. It is not a fourth technical layer: governance belongs to Shaper OS, durable truth and execution to Runtime, human interaction to Workspace, and domain specialization to Packages.
 
 ---
 

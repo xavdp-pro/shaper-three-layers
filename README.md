@@ -34,7 +34,7 @@ See the [decision foundation](10-SHAPER-OS/00_MASTER.md#decision-hygiene-ethics-
 
 This repository isolates the architecture discussed for a portable, sovereign, agent-native operating environment for organizations.
 
-It is deliberately **not** the general Shaper OS repository, not the Enterprise OS application catalogue, and not a Linux distribution repository. Its purpose is to define the system that lets an organization keep the same work environment, identity, context, applications, agents and governance while the host device may change between Windows, macOS, Linux, mobile, web, or an optional sovereign Shaper Linux host.
+It is deliberately **not** the general Shaper OS repository, not the SHAPER Enterprise application catalogue, and not a Linux distribution repository. Its purpose is to define the system that lets an organization keep the same work environment, identity, context, applications, agents and governance while the host device may change between Windows, macOS, Linux, mobile, web, or an optional sovereign Shaper Linux host.
 
 ## Executable companion (Shaper OS kit)
 
@@ -49,7 +49,7 @@ Runtime responsibilities, Workspace shell) without mixing it with install steps.
 | :--- | :--- |
 | Where do I start as an agent or architect? | [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) and [`AGENTS.md`](AGENTS.md) |
 | How do I deploy and prove a universe? | [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — `AGENTS.md`, runbook, `software/universes/univ-base/` |
-| How do the three strata fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
+| How do the three layers fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
 | Who gets credit? | This repo [`AUTHORS.md`](AUTHORS.md); executable kit [V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and `Co-Authored-By` trailers |
 
 ## The three primary layers

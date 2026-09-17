@@ -1,6 +1,6 @@
 # AUTHORS — who made this documentation
 
-The three-strata architecture repository is the work of a human-and-agents
+The three-layer architecture repository is the work of a human-and-agents
 tandem. The human held intent and final word; agents drafted, reviewed, and
 reconciled cross-layer material. Per-commit credit is in git trailers; this
 page is the whole team for **this repository**.

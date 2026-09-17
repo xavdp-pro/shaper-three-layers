@@ -1,6 +1,6 @@
 > Canonical integration note
 >
-> Enterprise OS is preserved here as the business reference manifestation of Shaper. It is not a fourth technical layer: governance belongs to Shaper OS, durable truth and execution to Runtime, human interaction to Workspace, and domain specialization to Packages.
+> SHAPER Enterprise (historically "Enterprise OS", the name this reference corpus still uses) is preserved here as the business reference manifestation of Shaper. It is not a fourth technical layer: governance belongs to Shaper OS, durable truth and execution to Runtime, human interaction to Workspace, and domain specialization to Packages.
 
 ---
 
@@ -36,7 +36,7 @@ Goal: trust through familiarity.
 
 ---
 
-# Level E1 — Assisted work
+# Level E1 — Ask Helm
 
 The user asks Helm:
 
@@ -52,7 +52,7 @@ Goal: understand that natural language is another interface to the same business
 
 ---
 
-# Level E2 — Delegated execution
+# Level E2 — Delegate once
 
 Examples:
 
@@ -67,7 +67,7 @@ Goal: experience delegation.
 
 ---
 
-# Level E3 — Pilotage
+# Level E3 — Pilot
 
 The user starts asking:
 
@@ -82,18 +82,31 @@ Goal: move from execution to steering.
 
 ---
 
-# Level E4 — Controlled automation
+# Level E4 — Standing mandate
 
-A repeated process can become:
+A repeated process can run under a standing mandate:
 
 - scheduled;
 - event-driven;
 - approval-based;
-- fully automated.
+- automatic within the mandate, with its scope, owner, exceptions, STOP and review.
 
-The human chooses.
+The human chooses, and the mandate says where automation stops.
 
 Goal: scale without losing governance.
+
+---
+
+# Level E5 — Shape the environment
+
+The pilot adds, configures or removes a feature the class offers, taken through
+tests and counter-view, applied, then rolled back cleanly if needed.
+
+Goal: the organization shapes its own tool without leaving its jurisdiction.
+
+Level names follow the pilot levels of SHAPER OS V1.14 Rule 37 and the missions of
+[the future owner journey](09_FUTURE_OWNER_AND_TESTER_JOURNEY.md) (aligned
+17 September 2026).
 
 ---
 
