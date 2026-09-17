@@ -296,17 +296,14 @@ Prefer:
 alert → related object/context → reason → suggested/available action
 ```
 
-## 19. User and Steward surfaces
+## 19. Work and governance views
 
-Default distribution may separate:
+There is one conversational interface, Helm, for every pilot (Rule 0F). What a person sees depends on their jurisdiction and proven pilot level:
 
-### Shaper
-Normal work client: Workspace, Files, Apps, Agents, Search, business actions.
+- **Work views:** Workspace, Files, Apps, Agents, Search, business actions.
+- **Governance views** (Steward level): identity, devices, policies, capabilities, audit, trust, infrastructure, recovery.
 
-### Shaper Steward
-Governance/administration: identity, devices, policies, capabilities, audit, trust, infrastructure, recovery.
-
-High-security deployments may use separate binaries/packages. The real authorization boundary remains Runtime policy and cryptographic identity, not the presence/absence of menu items.
+There is no separately named governance product: the earlier working name `Shaper Steward` is retired (17 September 2026). High-security deployments may still package governance tooling separately, as defense in depth. The real authorization boundary remains Runtime policy and cryptographic identity, not the presence/absence of menu items.
 
 ## 20. Local security posture
 

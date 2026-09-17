@@ -45,7 +45,7 @@ qualification. PodMesh's active manager replica holds a lease over PodMesh
 operations; it is not the Governor of this table and gains no coordination
 authority from its name.
 
-Separate User and Steward applications are useful defense in depth. Runtime authorization and cryptographic identity remain the real boundary.
+Packaging governance tooling separately from work tooling is useful defense in depth; it never creates a second interface beside Helm. Runtime authorization and cryptographic identity remain the real boundary.
 
 ## Fractal observation and parent-led correction
 

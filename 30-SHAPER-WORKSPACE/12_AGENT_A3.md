@@ -11,7 +11,7 @@ It may design:
 - multi-window/process model;
 - Surface system;
 - declarative app renderer;
-- user/Steward application split;
+- work and governance views inside Helm, and optional separate packaging of governance tooling;
 - web-surface trust boundary;
 - host/native application gateways;
 - local secure cache integration;

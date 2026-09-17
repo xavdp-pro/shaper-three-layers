@@ -59,7 +59,10 @@ product and **the Workspace layer** for the architecture.
 Retired or refused names: `Enterprise OS` (historical source term, below),
 `Workspace OS` (never a product name), `Shaper Voice OS` (replaced by SHAPER Vox),
 `KovZu` (the former name of Helm), `Control Hub` (refused as a second name for
-Helm).
+Helm), `Shaper Steward` (retired 17 September 2026: a separately named governance
+application; governance views live in Helm at the Steward level, and *Steward*
+remains the human of a root tandem), `Shaper Portfolio` (retired the same day: a
+cross-organization view is a **jurisdiction**, and Rule 37 refuses "portfolio").
 
 ## “Enterprise OS”
 

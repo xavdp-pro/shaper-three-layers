@@ -7,14 +7,14 @@ The Steward controls what the Workspace may expose and request, but Runtime rema
 
 A hidden admin menu is not security. An absent admin binary is defense in depth, not the primary boundary.
 
-## 2. User versus Steward distribution
+## 2. Work versus governance views
 
-Recommended default:
+One interface, Helm, shows each person what their jurisdiction and proven pilot level allow:
 
-- **Shaper** — normal work client;
-- **Shaper Steward** — identity, policy, devices, audit, trust, recovery and deep configuration.
+- work views for the people of the Organization;
+- governance views (identity, policy, devices, audit, trust, recovery and deep configuration) at the Steward level.
 
-High-security deployments can distribute Steward separately and restrict its installation. Sensitive operations still require Runtime authorization and step-up policy.
+The earlier split into two named products (`Shaper` and `Shaper Steward`) is retired (17 September 2026). High-security deployments can still package governance tooling separately and restrict its installation, as defense in depth. Sensitive operations still require Runtime authorization and step-up policy.
 
 ## 3. Workspace capability policy
 

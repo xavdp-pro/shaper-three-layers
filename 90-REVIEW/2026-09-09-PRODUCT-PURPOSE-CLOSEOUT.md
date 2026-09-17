@@ -9,6 +9,10 @@ of the conclusion.
 
 **Verdict:** COHERENT WITH CORRECTIONS
 
+> **Superseded in part (17 September 2026):** the `Portfolio` scope is retired; a
+> cross-organization view is a jurisdiction (Rule 37). This record keeps its
+> original wording. See `00-META/05_NAMING_AND_DEPRECATIONS.md`.
+
 ## Pass 1 — Kernel, meaning and governance
 
 **Observed:** The proposed service hierarchy introduces a subscription control

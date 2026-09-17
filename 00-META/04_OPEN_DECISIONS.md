@@ -123,15 +123,19 @@ Decide:
 - test/rollback gates;
 - compatibility window across Runtime versions.
 
-## 12. User versus Steward binaries
+## 12. Packaging of governance tooling
 
-Default proposal:
+Settled on 17 September 2026 for the interface: there is one conversational
+interface, Helm, for every pilot (Rule 0F), and no separately named governance
+product (`Shaper Steward` is retired). Governance views appear in Helm at the
+Steward level, within the jurisdiction.
 
-- one normal Shaper client;
-- a distinct Steward surface/application;
-- optionally separate signed Steward binary in high-security deployments.
+Still open, as packaging only:
 
-The binary split is defense in depth, not the primary authorization boundary.
+- optionally a separately signed binary for governance tooling in
+  high-security deployments.
+
+A packaging split is defense in depth, not the primary authorization boundary.
 
 ## 13. External application integration
 

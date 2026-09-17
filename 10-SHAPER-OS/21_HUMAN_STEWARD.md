@@ -139,13 +139,13 @@ Runtime is where Steward governance becomes enforceable:
 - key brokerage;
 - backup/recovery.
 
-The Steward Console is a projection over Runtime authority. It is not the authority itself.
+Helm's governance views, at the Steward level, are a projection over Runtime authority. They are not the authority itself.
 
 ## 12. Relationship to Workspace
 
 Workspace should hide the cathedral from ordinary users while making Steward controls precise and inspectable.
 
-A separate Steward application/surface can reduce exposed administrative tooling. High-security deployments may package it separately, but Runtime authorization remains the primary boundary.
+Packaging governance tooling separately can reduce exposed administrative tooling; it never becomes a second interface beside Helm. High-security deployments may package it separately, but Runtime authorization remains the primary boundary.
 
 ## 13. Governance change procedure
 

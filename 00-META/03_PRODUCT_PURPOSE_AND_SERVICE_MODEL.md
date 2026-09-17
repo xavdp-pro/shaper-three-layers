@@ -42,7 +42,6 @@ without forcing it to discard its history or conform to a rigid template.
 | Scope | Working name | Purpose |
 | --- | --- | --- |
 | Platform parent | **Shaper Service** | Subscription, identity boundary, entitlement, billing and the service control plane. |
-| Portfolio scope | **Shaper Portfolio** | A Steward's authorized cross-organization view: selected health, activity, risk and value signals across one or more Organizations. |
 | Operational scope | **Shaper Organization** | One governed enterprise, association, practice or operating entity with its own people, objects, policies, data and applications. |
 | Bounded child scope | **Shaper Cell** | A delegated team, site, project, client environment or specialized operational scope inside an Organization. |
 | Work environment | **Shaper Workspace** | The human-facing surfaces through which people and agents observe, collaborate and act. |
@@ -54,10 +53,13 @@ be a child Universe when its autonomy, data and policy boundary require it.
 
 Any of these scopes can be granted as a **jurisdiction**: the universes a pilot is in charge of through Helm. A client given an Organization, or a Cell inside it, holds the **jurisdiction root** of that scope; the founding tandem at the top of the fractal holds the **master root** ([strata](05_NAMING_AND_DEPRECATIONS.md#strata-of-authority-17-september-2026)).
 
-A Portfolio is not a parent authority by default. It receives only the
-information and control each Organization explicitly discloses through policy,
-role and mandate. Its purpose is stewardship and orientation, not automatic
-surveillance.
+A jurisdiction may span several Organizations: that is the view a client or a
+Steward has, through Helm, of their park of universes. Such a view is not a
+parent authority by default. It receives only the information and control each
+Organization explicitly discloses through policy, role and mandate. Its purpose
+is stewardship and orientation, not automatic surveillance. (The earlier working
+name `Shaper Portfolio` for this view is retired on 17 September 2026: Rule 37
+refuses "portfolio" as a perimeter; the word is **jurisdiction**.)
 
 ## Growth model
 
@@ -74,7 +76,7 @@ does not silently become Organization authority or operational source of truth.
 
 This keeps growth incremental:
 
-`Shaper Service → Portfolio → Organization → Cell → Workspace`
+`Shaper Service → Organization → Cell → Workspace`, each of which can be granted as a jurisdiction
 
 The architecture scales by adding bounded, observable scopes — not by turning
 one central instance into an opaque monolith.

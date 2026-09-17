@@ -103,9 +103,9 @@ Security decision is server/runtime-side, not UI-side.
 
 Evaluate effective authority from identity, device/session state, capability, role/object/context policy, mandate, criticality and trust.
 
-## 9. Steward separation
+## 9. Separating governance tooling
 
-A separate Steward application/binary can reduce exposure of privileged tooling. It is useful defense in depth, especially when installation is controlled.
+Packaging governance tooling as a separate binary can reduce exposure of privileged tooling. It is useful defense in depth, especially when installation is controlled, and it is never a second interface beside Helm.
 
 It must never be treated as sufficient authorization by itself.
 
