@@ -67,7 +67,9 @@ A person at the Helm climbs six pilot levels, from familiar work (E0) to shaping
 
 - **Words.** The pilot names the objects, roles and authority involved before acting.
 - **Gradient.** A level is useful on its own before the next one opens.
-- **Reality.** Every mission ends on observable events, a planted failure and the evidence read back.
+- **Reality.** Every mission ends on observable events, a safeguard practised openly and the evidence read back.
+
+Pilot training sets no trap: every step and every expected result is announced before the pilot attempts it.
 
 The full design lives in the [future owner journey](../50-ENTERPRISE-REFERENCE/09_FUTURE_OWNER_AND_TESTER_JOURNEY.md#pilot-training-proving-each-level).
 

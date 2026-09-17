@@ -58,10 +58,12 @@ Helm proposes the missions of a level one by one. Each mission contains:
 1. **A situation.** A believable event in the fictional company.
 2. **The words.** The pilot names the objects, roles and authority involved, in their own words. This is the *Words* check of the [pedagogical model](../00-META/01_PEDAGOGICAL_MODEL.md).
 3. **The action of the level.** The pilot performs it through Helm.
-4. **A planted difficulty.** For example a wrong object, an ambiguous request, a STOP to issue or a change to roll back.
+4. **A safeguard, practised openly.** Helm announces it before the pilot uses it: stopping an action, undoing a change, or asking Helm to clarify an ambiguous request.
 5. **The evidence.** The pilot reads back what happened and why.
 
 Helm guides, explains and hints. It never performs the mission in the pilot's place.
+
+**No trap.** Nothing in a mission is hidden from the pilot. Every step, every safeguard and every expected result is announced before it is attempted. A trap would teach the pilot to distrust the guide, when the training exists to build trust between the person and the system they steer.
 
 ### What validates each level
 
@@ -69,9 +71,9 @@ Helm guides, explains and hints. It never performs the mission in the pilot's pl
 | --- | --- | --- |
 | E0 — Familiar work | Finding customers, orders and documents without an agent | Finding them, and saying where the truth of each lives |
 | E1 — Ask Helm | Asking, demanding sources, noticing uncertainty | Telling a sourced answer from an inference |
-| E2 — Delegate once | Having Helm prepare a quote or a task, reading the preview | Catching a planted wrong object before approving |
+| E2 — Delegate once | Having Helm prepare a quote or a task, reading the preview | Saying, from the preview, what will change and for whom, then approving or declining |
 | E3 — Pilot | Reading attention signals and tensions | Recording a decision with its reason, apart from observations and hypotheses |
-| E4 — Standing mandate | Defining scope, owner, exceptions, STOP and review | A mandate that stops correctly on a planted exception |
+| E4 — Standing mandate | Defining scope, owner, exceptions, STOP and review | A mandate whose exception rule and STOP the pilot triggers on purpose and watches work |
 | E5 — Shape the environment | Adding, configuring or removing a feature the class offers | A change taken through tests and counter-view, applied, then rolled back cleanly |
 
 A level is **observed, never declared**. It is validated only by the instance's own events and by the pilot's correct naming, never by a self-assessment or by Helm's opinion.
