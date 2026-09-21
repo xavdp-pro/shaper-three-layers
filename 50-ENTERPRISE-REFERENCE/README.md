@@ -14,6 +14,8 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 - Alignment method: [`00-META/07_AGNOSTIC_METHOD_TRANSLATION.md`](../00-META/07_AGNOSTIC_METHOD_TRANSLATION.md) shows how an Enterprise universe carries outcome, purpose, policies, work, operating scene, indicators and verified outcome without importing external authority.
 
+- Operational State Piloting: [`16_OPERATIONAL_STATE_PILOTING.md`](16_OPERATIONAL_STATE_PILOTING.md) translates this into assessable operating states, evidence gates, contextual indicators and authorized transitions.
+
 - Company governance surfaces: `15_DIRECTION_DECISIONS_AND_MANDATES.md` separates
   social discussions, company direction and authoritative decisions/mandates,
   including scope-specific onboarding for new agents (section *How a new agent
