@@ -101,3 +101,49 @@ SHAPER does not import external ranks, claims about human nature, spiritual
 claims, organizational authority or mandatory practices into its product,
 architecture, interfaces or documentation. It keeps only structures that can be
 explained in ordinary language, applied voluntarily and checked against reality.
+
+## Application to a SHAPER Enterprise universe
+
+A SHAPER Enterprise universe can materialize the alignment stack without
+presenting it as a management theory. Its everyday screens, records, agents and
+reports carry the relevant parts as ordinary working information.
+
+| Alignment concern | Enterprise materialization | Coherence question |
+| --- | --- | --- |
+| Desired outcome | A stated outcome for the organization or a bounded Cell | What useful change should be real for people outside the delivery team? |
+| Operating purpose | A short purpose statement attached to the Organization, Cell or service | Why does this scope exist? |
+| Durable principles | Policies for rights, retention, safety, quality and escalation | Which actions or shortcuts must remain unavailable? |
+| Strategy | A small number of chosen approaches and dependencies | Why is this the chosen route rather than an unexamined default? |
+| Coordinated programme | A governed group of related initiatives | Which projects must work together for the outcome? |
+| Bounded project | A scope, owner, resources, risks, acceptance conditions and closure record | What is deliberately included, and what is not? |
+| Immediate action | A task, request or automation run under a role and mandate | Who may perform it, and what result is expected now? |
+| Desired operating scene | A concrete future workflow for people, agents, data, exceptions and recovery | What would a good ordinary day and a difficult day look like? |
+| Indicators | Contextual measures, trends, observations and exceptions | Are we moving toward the outcome without damaging another concern? |
+| Useful delivered outcome | A verified capability, service or result used by the organization | What can a real person now rely on? |
+
+### Runtime and Workspace responsibilities
+
+The Runtime records the organizational truth: scope, roles, mandates, policies,
+objects, events, evidence, indicators and the relation between them. The
+Workspace makes this legible to the people authorized to see it. Helm may help a
+person create, compare or review these records, but it cannot turn a suggestion
+into policy, a policy into a permission, or an indicator into a decision.
+
+This makes the method practical without turning it into an invisible scoring
+system. A person can see the current outcome, the work underway, the evidence
+available and the unresolved tensions for their authorized scope.
+
+### Review rhythm
+
+A scope should revisit the stack when:
+
+- a result is repeatedly missed;
+- an indicator improves while people, safety or quality worsen;
+- a project produces work but no useful delivered outcome;
+- a policy blocks legitimate work or leaves a preventable risk open; or
+- reality changes the original assumptions.
+
+The review asks first whether the immediate work is wrong, then whether the
+project, programme, strategy, principles, purpose or outcome above it needs to
+change. This prevents pressure on a local number from replacing judgment about
+the organization as a whole.
