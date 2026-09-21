@@ -112,6 +112,10 @@ And every substantial concept should answer:
 4. What can go wrong?
 5. How do we verify that it works?
 
+## Agnostic method translation
+
+[**Agnostic Method Translation**](00-META/07_AGNOSTIC_METHOD_TRANSLATION.md) defines how SHAPER turns useful external conceptual structures into plain-language, testable methods without importing external authority.
+
 ## Repository map
 
 - `00-META/` — scope, pedagogy, taxonomy, cross-layer architecture, open decisions, and [`06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md).
