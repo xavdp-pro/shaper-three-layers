@@ -16,6 +16,8 @@ This section restores the enterprise-facing substance of the earlier Enterprise 
 
 - Operational State Piloting: [`16_OPERATIONAL_STATE_PILOTING.md`](16_OPERATIONAL_STATE_PILOTING.md) translates this into assessable operating states, evidence gates, contextual indicators and authorized transitions.
 
+- Enterprise Piloting Model: [`17_ENTERPRISE_PILOTING_MODEL.md`](17_ENTERPRISE_PILOTING_MODEL.md) defines the owner-and-Helm loop over outcomes, state, attention, authority, evidence and learning.
+
 - Company governance surfaces: `15_DIRECTION_DECISIONS_AND_MANDATES.md` separates
   social discussions, company direction and authoritative decisions/mandates,
   including scope-specific onboarding for new agents (section *How a new agent
