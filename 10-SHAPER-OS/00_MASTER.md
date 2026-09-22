@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Shaper OS is the governing logic below Runtime and Workspace. It does not define one database, UI toolkit, Linux distribution or business application. It defines the discipline by which those things remain useful, observable, bounded, repairable and revisable while the organization changes.
+Shaper OS is the governing logic below Runtime and Workspace. It does not define business schemas, a UI toolkit, a Linux distribution or a business application. It does require one isolated MariaDB instance inside the boundary of every functional Podman: functions never share a universe-wide database, and each one owns its credentials, storage, migrations, backup and restore proof. Shaper OS defines the discipline by which those things remain useful, observable, bounded, repairable and revisable while the organization changes.
 
 The central problem is not “how do we make a system that never makes mistakes?” It is:
 

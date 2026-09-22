@@ -12,9 +12,11 @@ This document extends references 12–14 without changing source archives.
 | Orientations | company-direction | Purpose, objectives, priorities, desired outcomes, owners and review dates |
 | Registre des décisions et mandats | decision-registry | Authoritative records of decisions, agreements and bounded authorizations |
 
-These can be separate modules in one interface. Do not prescribe one process,
-database or LXC per module. Reuse shared identity, objects, relationships, search,
-notifications and evidence instead of creating competing registries.
+These can be modules in one functional Podman and one interface. Do not split a
+module into a separate Podman merely because it has a name. When a capability is
+materialised as a distinct functional Podman, SHAPER OS requires that Podman to
+own its own isolated MariaDB; integration reuses typed identity, relationship,
+search, notification and evidence contracts rather than shared database tables.
 
 An orientation explains what the company wants and why. A discussion explores
 options. A decision records what an authorized actor decided. A mandate grants

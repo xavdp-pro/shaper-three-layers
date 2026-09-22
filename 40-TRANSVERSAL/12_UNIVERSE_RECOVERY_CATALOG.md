@@ -22,7 +22,7 @@ Restore button is not itself execution authority.
 - Universe identity, environment, source Git revisions and deployed manifest.
 - Exact OCI image digests for every participating `brick-*` / `img-*`, with
   recovery availability verified independently of the original host.
-- Consistent database exports and universe-owned `vol-*` contents, including
+- Consistent exports for every functional Podman's private MariaDB and its owned `vol-*` contents, including
   recordings, objects, pending jobs, agent contexts, policies and event history.
 - The necessary `cfg-*` and provider/connector binding metadata. Sensitive
   configuration and data are encrypted; keys have a separate recovery path.
@@ -32,8 +32,9 @@ Restore button is not itself execution authority.
 
 The proof is absent until an attempt occurs; its absence explicitly means
 **not restore-tested**, never implicit success. Establish one recoverable
-consistency boundary across databases, recordings and Queue, not merely one
-individually valid export per store.
+consistency boundary across the separately owned databases, recordings and Queue,
+not merely one individually valid export per store. Recovery coordination never
+turns those databases into a shared runtime database.
 
 Container images alone do not include the persistent business state. A running
 process checkpoint may be an optional acceleration mechanism; it does not replace
