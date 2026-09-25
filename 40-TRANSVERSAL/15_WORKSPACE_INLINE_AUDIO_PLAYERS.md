@@ -50,8 +50,9 @@ component/image and repair the shared implementation.
 
 ## Current adoption
 
-Clinic owner: `/home/zaza/Bureau/REMOTE3/tools-app/src/components/LecteurAudio.jsx`.
-Scope and evidence: `/home/zaza/Bureau/REMOTE3/tools-app/INLINE-AUDIO-2026-09-10.md`.
+Clinic owner: `tools-app/src/components/LecteurAudio.jsx` in the separate
+application repository. Scope and evidence: `tools-app/INLINE-AUDIO-2026-09-10.md`
+in that repository.
 Generic Vox, Helm and demo migration remain pending until recorded by their owners.
 
 ## Three-pass review

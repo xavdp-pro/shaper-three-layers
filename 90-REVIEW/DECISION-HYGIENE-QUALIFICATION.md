@@ -4,8 +4,8 @@ Date: 2026-09-11. Owner: human-agent tandem.
 Scope: agreed agnostic decision framework, its role projection and qualification scenarios.
 Sources: current operator decisions; active OS master and human/A1/A2 guides;
 V1.14 canon, boot and operating contracts, and consulted-not-carried doctrine.
-The GPT clone and archived layers are not editing targets. This is not an audit
-of all historical conversations, all agents or deployed universes.
+Historical source material and archived layers are not editing targets. This is
+not an audit of all historical conversations, all agents or deployed universes.
 
 | ID | Requirement / dependency | Acceptance for this documentation change |
 | --- | --- | --- |

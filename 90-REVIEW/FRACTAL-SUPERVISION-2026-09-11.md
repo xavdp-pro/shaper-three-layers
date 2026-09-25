@@ -21,7 +21,7 @@ observations, unreachable children, repeated failure and duplicate activation.
 Correction during drafting: Logger must not be described as a replacement for
 ledger/status or as an automatic proof of outcome. No independent counter-review
 was performed in this bounded documentation change; the operator has transferred
-implementation to Claude and asked to conserve GPT use.
+implementation to Claude.
 
 FS-01–03 reconciled after editing: documentation complete, integration execution
 NOT VERIFIED. Verdict: COHERENT within documentation scope; deployment remains

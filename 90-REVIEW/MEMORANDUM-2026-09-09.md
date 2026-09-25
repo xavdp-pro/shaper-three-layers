@@ -2,8 +2,8 @@
 
 ## Scope and authority
 
-Xavier requested completion of the GPT corpus reading and the SHAPER OS V1.14
-reread before resuming implementation. He then authorized correcting active
+The operator requested source coverage and the SHAPER OS V1.14 reread before
+resuming implementation. He then authorized correcting active
 documentation contradictions and committing and pushing coherent increments
 to this repository as work proceeds.
 
@@ -23,19 +23,12 @@ Six existing local commits are being published without rewriting their content:
 
 ## Reading and correction status
 
-Reading is still in progress. The local coverage ledger distinguishes documents
-read in this session, prior-session reading, exact duplicates and pending text:
-
-`/home/zaza/Bureau/REMOTE3/GPT/READING-AUDIT/coverage.json`
-
-Findings and continuation instructions are held locally in:
-
-`/home/zaza/Bureau/REMOTE3/GPT/READING-AUDIT/FINDINGS.md`
-
-These absolute paths are local handoff locations, not files distributed by this
-repository. Markdown coverage does not constitute a full source-code or runtime
-audit. Archives remain immutable evidence. Architectural choices not settled by
-the user's instructions or governing documents must remain explicitly open.
+Reading is still in progress. The private reading record distinguishes documents
+read in this session, prior-session reading, exact duplicates and pending text.
+It also retains findings and continuation instructions outside this repository.
+Markdown coverage does not constitute a full source-code or runtime audit.
+Archives remain immutable evidence. Architectural choices not settled by the
+operator's instructions or governing documents must remain explicitly open.
 
 ## Next steps and completion criteria
 
