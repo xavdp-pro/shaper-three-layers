@@ -203,16 +203,16 @@ qualified separately from this documentary reconciliation.
   enter Queue or Logger payloads.
 
 ### Rule T-10: Layered Telemetry and Failure Isolation
-- **Invariant**: every brick keeps detailed technical logs locally and emits a
+- **Invariant**: every component keeps detailed technical logs locally and emits a
   small normalized event stream to the universe Logger.
-- Every normalized event carries universe, brick, family, severity, event name,
+- Every normalized event carries universe, component, family, severity, event name,
   timestamp and correlation identity. Families are `operational`, `security`,
   `audit` and `business`.
 - Logger unavailability must not stop a call. The emitting adapter keeps a
   bounded local spool and retries; overflow is explicit. Secrets and content are
   removed before persistence.
 - A health response proves reachability only. Completion requires persisted
-  evidence, terminal state and correlation across the participating bricks.
+  evidence, terminal state and correlation across the participating components.
 
 ## 5. Generic Core and Universe Profiles
 

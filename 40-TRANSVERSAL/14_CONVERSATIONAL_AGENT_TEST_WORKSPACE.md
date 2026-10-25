@@ -3,7 +3,8 @@
 Status: standing requirement requested by Xavier on 2026-09-10.
 Scope: Clinic, generic Vox, conversational Helm surfaces and future specializations
 that expose conversational-agent configuration. Not a mandatory voice feature for
-bricks without a conversational role. Clinic implementation is in progress.
+components without a conversational role. Each specialization owns its applicable
+configuration surface and isolated test context.
 
 ## Intent and ownership
 

@@ -11,7 +11,7 @@ implementation. This rule adds no per-task approval request.
 
 ## Before implementation: enumerate the perimeter
 
-1. State the objective, included/excluded universes, subsystems, bricks, interfaces,
+1. State the objective, included/excluded universes, subsystems, components, interfaces,
    actors and scenarios. An exclusion must be explained, not silently dropped.
 2. List the sources to cover: current user decisions, canonical intents/rules,
    functional specifications, relevant archived discussions, existing checklists,
@@ -79,7 +79,7 @@ and test the missing scenarios rather than retroactively declaring them passed.
 
 ## Test means follow the delivered interaction
 
-Canonical obligation: [Shaper OS Rule 20](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/software/RULES.md#rule-20-functional-test-means).
+Canonical obligation: [Shaper OS Rule 20](https://github.com/xavdp-pro/SHAPER-OS-V1.15/blob/main/docs/rules/04-SERVICES-AND-QUALITY.md#rule-20).
 This section applies that obligation to the inventory and execution record;
 it does not grant separate authority.
 

@@ -5,7 +5,7 @@ tandem. The human held intent and final word; agents drafted, reviewed, and
 reconciled cross-layer material. Per-commit credit is in git trailers; this
 page is the whole team for **this repository**.
 
-Executable law, bricks, tests, and runtime proof credit live in
+Executable law, components, tests, and runtime proof credit live in
 [SHAPER-OS-V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md).
 
 ## Architect & Operator

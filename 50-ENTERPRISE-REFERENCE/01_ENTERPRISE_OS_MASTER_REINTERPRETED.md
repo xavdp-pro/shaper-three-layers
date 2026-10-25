@@ -963,7 +963,7 @@ SIP/trunk concurrency defines how many simultaneous inbound/outbound calls the i
 
 # 33. Softphone endpoints
 
-The telephony brick may provide:
+The telephony component may provide:
 
 - browser WebRTC softphone;
 - several simultaneous browser endpoints;

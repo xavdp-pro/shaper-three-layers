@@ -51,3 +51,11 @@ Helm is a human-facing interface, not policy, durable truth, universal orchestra
 Files under `99-SOURCE-ARCHIVE/` are immutable evidence. Canonical corrections belong in active documents and the restoration audit.
 
 Structural, irreversible, cross-tenant, security-sensitive or root actions require higher authority, counter-view, tests and recovery. Intelligence is not authority.
+
+## Maintained source and private companion
+
+This repository carries the maintained architecture. The distinct private
+`shaper-three-layers-lab` companion carries discussions, source-reading records,
+decisions and integration evidence. Raw dialogue and private implementation are
+outside public source distribution. Resolve current source revisions through the
+ecosystem owner map; historical reviews retain their dated scope.

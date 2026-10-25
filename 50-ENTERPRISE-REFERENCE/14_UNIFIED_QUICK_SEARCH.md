@@ -19,7 +19,7 @@ Unavailable modules contribute no fabricated results.
 
 Xavier states that the existing quick search is in a CRM already delivered to a
 customer. Treat it as a reuse source to locate and inspect, not as an application
-to modify for this work. The required evolution is a common inter-brick object
+to modify for this work. The required evolution is a common inter-component object
 declaration protocol, rather than a central list of hard-coded CRM searches.
 
 An object type explicitly declares whether it is searchable. Opt-in does not
@@ -60,9 +60,9 @@ relation references, detail resolver and update/deletion behavior. If semantic
 indexing is supported, eligible fields and processing constraints are declared
 separately. Sensitive fields and arbitrary object payloads are not indexed by default.
 
-Runtime validates and registers declarations from installed authorized bricks.
-Unknown/incompatible versions fail explicitly. A brick cannot register itself as
-owner of another brick's object type or supply executable code through metadata.
+Runtime validates and registers declarations from installed authorized components.
+Unknown/incompatible versions fail explicitly. A component cannot register itself as
+owner of another component's object type or supply executable code through metadata.
 Keep contract capability references separate from arbitrary URLs or expressions.
 
 Registration lifecycle includes discovery, validation, activation, schema migration,
@@ -73,7 +73,7 @@ setting searchable false withdraws its results and schedules index cleanup.
 
 The contract must support a declared retrieval strategy (index, source query or
 hybrid) without prescribing one engine. Each source reports availability, index
-freshness and pagination behavior. Cross-brick identity and relations let the
+freshness and pagination behavior. Cross-component identity and relations let the
 aggregator group related records without merging distinct objects such as a
 contact and its address. Display/action metadata never confers action permission.
 

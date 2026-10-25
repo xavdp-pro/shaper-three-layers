@@ -1029,3 +1029,13 @@ but:
 > **The firmest rules are those that durably protect the ability to change correctly.**
 
 > **Shaper OS does not seek to prevent movement. It seeks to give the system enough axis to move through change without losing itself.**
+
+## Composition vocabulary and source ownership
+
+Use the [composition map](../../../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+and [class lineage](../../../00-META/09_CLASS_SPECIALIZATION_INSTANCE.md) to resolve
+component, generic stem cell, specialized cell/service, logical space and fractal.
+OS / Runtime / Workspace are responsibilities across these scales. Organizational
+cell metaphors, a specialized service and a physical execution envelope retain
+their distinct types. Public mental definitions and private operational/work
+sources have separate owners.

@@ -74,16 +74,21 @@ Options include platform-native WebViews and a standardized Chromium-based surfa
 
 Do not implement a browser engine.
 
-## 8. Object storage / graph / search implementation
+## 8. State and derived retrieval profiles
 
-Keep the conceptual object graph independent of whether implementation uses:
+The selected application-state contract uses each functional owner's private
+MariaDB, including histories, schedules, work attempts and durable agent context.
+Partitioning follows the declared workload, access and retention needs while
+preserving identity and concurrency constraints. This choice is settled by the
+operator's source-architecture direction.
 
-- PostgreSQL relational model;
-- object storage;
-- graph projection;
-- search index;
-- vector database;
-- hybrid architecture.
+The conceptual graph defines typed identity and relationships independently of
+its retrieval projection. Object/blob storage, text search and derived vector
+indexes serve declared purposes with source references, access boundaries and
+rebuild rules. Qdrant/MCP follows the traditional Markdown/JSON knowledge corpus;
+it is a derived retrieval layer, not application truth or a replacement database.
+Exact projection engines, formats and cache strategies remain implementation
+profile choices within [state ownership](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md).
 
 ## 9. Offline conflict strategy
 

@@ -1,7 +1,7 @@
 # Company direction, social life, decisions and mandates
 
 Status: proposed functional boundaries following Xavier's 2026-09-09 request.
-Names below are proposals, not existing brick identifiers or deployed services.
+Names below are proposals, not existing component identifiers or deployed services.
 This document extends references 12–14 without changing source archives.
 
 ## Names and boundaries

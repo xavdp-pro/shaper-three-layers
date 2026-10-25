@@ -25,3 +25,13 @@ Runtime is headless by design. A browser, desktop, mobile interface, CRM screen,
 ## Current source
 
 - [Three-Perspective Review](reviews/12_THREE_PERSPECTIVE_REVIEW.md) records the bridges and production invariants identified in the Shaper OS / Enterprise OS coherence pass.
+
+## Composition vocabulary and source ownership
+
+Use the [composition map](../../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+and [class lineage](../../00-META/09_CLASS_SPECIALIZATION_INSTANCE.md) to resolve
+component, generic stem cell, specialized cell/service, logical space and fractal.
+OS / Runtime / Workspace are responsibilities across these scales. Organizational
+cell metaphors, a specialized service and a physical execution envelope retain
+their distinct types. Public mental definitions and private operational/work
+sources have separate owners.

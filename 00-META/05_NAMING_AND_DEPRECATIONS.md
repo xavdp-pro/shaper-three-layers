@@ -116,7 +116,7 @@ Preserved functions map to:
 - standing automated execution → **automation actor under mandate**.
 
 This deprecation concerns the architectural role vocabulary in this repository.
-It does not remove a software brick named `Maestro` from the engineering kit or
+It does not remove a software component named `Maestro` from the engineering kit or
 instruct an implementer to rename/delete it. Changing that implementation requires
 its own contract and migration review. Map its actual responsibilities to these
 roles rather than equating a component name with a governance function.
