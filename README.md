@@ -195,3 +195,7 @@ Use the [review records](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md) for the
 historical scope and evidence of earlier documentation work. The mental source
 keeps responsibilities and relationships readable; each realization and its
 companion lab carry its delivery, operation and learning records.
+
+## Dedication
+
+[Personal dedication by Xavier de Poorter](DEDICATION.md).
