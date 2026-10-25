@@ -31,3 +31,19 @@ routes, the three masters and each domain route, then task-relevant owning
 contracts. Public common references connect to users' private realizations through
 their authorized source registry.
 
+
+## Optional domains and client distinction
+
+The [optional domain dispatcher](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/68-OPTIONAL-DOMAINS.md)
+adds observation/maintenance and summarization, and identifies the shared
+entrances for identity/membership, billing/entitlement, booking and user workspaces.
+Its resolution column distinguishes a generic public owner from a product
+contract that the task must select. No row asserts that a concrete implementation
+is installed or makes every domain part of a generic base.
+
+A softphone task constructs a client consuming telephony interfaces. Its
+`concept:softphone` route does not inherit service-base construction. Constructing
+the telephony service is a separate selected task. Service recovery follows the
+[recovery owner](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/32-PERSISTENCE-AND-RECOVERY-RATIONALE.md)
+through state, identity, authority and reconciliation, then the actual affected
+component/domain contracts and profile; it does not infer all-domain recovery.

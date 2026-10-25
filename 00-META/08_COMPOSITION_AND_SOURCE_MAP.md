@@ -44,3 +44,25 @@ user implementations, configuration, data and work through permitted references.
   [Workspace](../30-SHAPER-WORKSPACE/00_MASTER.md): responsibility owners.
 - [Service routes](../60-SERVICE-ROUTES/README.md): domain dependency entrances.
 
+
+## Independent functional coordinates
+
+The framework [perimeter owner](https://github.com/xavdp-pro/SHAPER-OS-V1.15/blob/main/docs/architecture/PERIMETERS.md)
+defines P1 foundation, P2 agentic behavior and P3 business behavior. This axis
+crosses OS/Runtime/Workspace responsibilities and composition scale. Logger,
+Vault and generic Queue are P1; Maestro and cognition bridge are P2. A whole
+base includes functions in multiple perimeters; a domain service does not
+reclassify its inherited components. A client can expose generic or business
+behavior, so classify its actual function rather than its UI or repository name.
+
+The [ecosystem projection](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/12-COMPONENTS.md#functional-perimeter-and-independent-coordinates)
+separates functional perimeter, structural kind, class/specialization/instance,
+responsibilities, actor roles and source coordinates. Typed `member-of`,
+`governs`, `delegates`, `owned-by` and `runs-at` links retain their separate
+meanings; none is a synonym for priority or physical nesting.
+
+Stable `class:stem-cell` and `component:*` contract IDs resolve their existing
+mental owners in the [integration graph](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/navigation/relationships.json).
+Source page IDs and glossary concept IDs remain separate. Runtime bindings
+supply selected revisions and interfaces; Workspace presents those references
+without acquiring their authority.
