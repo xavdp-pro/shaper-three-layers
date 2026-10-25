@@ -6,6 +6,13 @@ Shaper Runtime is the operational truth layer between the Shaper OS governance k
 
 It must be deployable on a company server, VPS/cloud server, local workstation, LAN appliance or hybrid topology without changing the conceptual organization model.
 
+Use [composition/source ownership](../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+for scope and [persistent acting agents](../40-TRANSVERSAL/16_PERSISTENT_ACTING_AGENTS.md)
+for continuing delegated work. Local development on Linux, macOS or Windows and
+production deployment select explicit host/provider profiles while preserving
+class, instance, state and interface identity. Capability discovery accounts for
+the actual platform.
+
 ## 1. Runtime responsibilities
 
 The Runtime owns or coordinates:
@@ -161,7 +168,13 @@ Folders remain a familiar projection, not necessarily the canonical truth.
 
 Reusable primitives should represent people, organizations, customers, contacts, tasks, decisions, documents, messages, products, orders, workflows, etc. Cross-object relations should be generic enough to avoid hard-coding every pair.
 
-The graph is conceptual and must not be dictated by the choice of PostgreSQL, graph database, search engine or vector store.
+The graph is conceptual: objects and relationships are not dictated by one table
+layout. MariaDB owns durable application state under each function's declared
+boundary, including jobs, events, schedules, memberships, desired state and
+persistent agent sessions. Follow [state ownership](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md)
+for transaction, schema, retention, partition and recovery contracts. Semantic
+indexes, including a selected Qdrant adapter, are derived search projections
+with provenance to their MariaDB-owned source and a rebuild path.
 
 ## 10. Source of truth
 
@@ -448,7 +461,10 @@ A service can be available but untrusted. Runtime policies may reduce capabiliti
 
 ## 27. Backup and disaster recovery
 
-The restoration unit is the **Universe**, not the laptop.
+Recovery names the affected service instances, their participating state owners
+and the consistency boundary. A logical space's membership identifies what must
+be recovered together; it does not require one physical container. Preserve
+instance identity across rebuild, restore or infrastructure promotion.
 
 A complete recovery design accounts for:
 

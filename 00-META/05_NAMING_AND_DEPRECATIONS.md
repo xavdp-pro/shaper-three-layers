@@ -4,6 +4,19 @@
 
 The commercial/product name may remain **Shaper** because shaping is the central behavior: the environment adapts to the organization rather than forcing the organization into a fixed software form.
 
+## Definition owner and compatible evolution
+
+The [independent glossary](https://github.com/xavdp-pro/shaper-glossary) owns
+stable terms and historical aliases. [Composition/source ownership](08_COMPOSITION_AND_SOURCE_MAP.md)
+projects them across responsibilities; [class, specialization and instance](09_CLASS_SPECIALIZATION_INSTANCE.md)
+separates reusable forms from installations and placement.
+
+Use **component** for the current concept and **specialized cell/service** for
+a base with domain capability. A **logical space** groups services and jurisdiction.
+Earlier brick, package, FUnit and organizational-cell wording remains traceable;
+existing `brick-*`, `funit-*`, image, socket, API and storage IDs stay compatible
+until their owner publishes an explicit transition.
+
 ## Canonical names in this repository
 
 - **Shaper OS** — living adaptive governance kernel.
@@ -24,23 +37,25 @@ The commercial/product name may remain **Shaper** because shaping is the central
 ## Strata of authority (17 September 2026)
 
 The engineering canon sealed these words in Rules 0F, 24 and 37 of
-[SHAPER OS V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/software/RULES.md). This repository uses the same meanings.
+[SHAPER OS V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/software/RULES.md). The current glossary and explicit delegation resolve their present application;
+the dated engineering source remains available for lineage.
 
 | Stratum | Who holds it | Full power over | Never reaches |
 | --- | --- | --- | --- |
 | **Master root** | The founding tandem: a human Steward and the root agent under their direct control | Every host from underneath, the Governor, the Makers, matrices, backup contracts, every universe and its pods | Nothing above it; it is the top of the fractal |
-| **Jurisdiction root** | A pilot and their agent at the Helm, given a jurisdiction by the root above: a client over their Workspace or Vox | The universes of that jurisdiction and their constituent pods, their features and configuration | A host, the Governor, a Maker, a matrix, a class repository, another jurisdiction, its own backup contract |
+| **Jurisdiction root** | A pilot and their agent at the Helm, given a jurisdiction by the root above: a client over their Workspace or Vox | The universes of that jurisdiction and their constituent pods, their features and configuration | A host, the Governor, a Maker, a matrix, a class repository, another jurisdiction or its own backup contract without explicit delegated authority |
 | **Pilot inside a jurisdiction** | A person the jurisdiction root grants a narrower jurisdiction or mandate to | What that grant and their pilot level allow | Anything wider than the grant |
 
 **Root Authority** keeps its meaning: the Steward, their directly controlled
 root-capable agents and the explicit policies, for one scope. The master root is
 the Root Authority at the top of the fractal; a jurisdiction root is the Root
-Authority of its jurisdiction. The Governor and the Makers belong to the master
-root's own universes and take direction from it alone.
+Authority of its jurisdiction. Governors and makers belong to explicitly owned scopes and take direction from
+their governing tandem through the declared delegation. Business and infrastructure
+governors retain separate purposes and may coexist.
 
-A **blank universe** is a future offer, not an available one: a universe granted
-empty to an infrastructure client, whose jurisdiction root builds what it wants,
-bounded by its backup contract.
+A **blank universe** describes a logical service scope granted to an
+infrastructure client, whose jurisdiction root composes what its selected profile
+and mandate allow, within its backup contract.
 
 ## Product names and their layers
 

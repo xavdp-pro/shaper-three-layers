@@ -118,6 +118,15 @@ exception the agent requests review. Revocation prevents subsequent authorizatio
 define cancellation/checkpoint behavior for already-running work and do not pretend
 revocation reverses completed external actions.
 
+## Shared context and persistent acting sessions
+
+[Persistent acting agents](../40-TRANSVERSAL/16_PERSISTENT_ACTING_AGENTS.md)
+carry session/context identity across delegated work. The
+[MariaDB state owner](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md)
+persists applicable decisions, mandates, source versions and shared-context
+references. Retrieval follows jurisdiction and current authority; remembered
+context is neither a new mandate nor inheritance of another actor's grant.
+
 ## How a new agent learns the current company decisions
 
 Provide a permission-filtered, scope-specific current-decision view using the

@@ -1,8 +1,28 @@
 # Agent Working Rules
 
-The canonical layers are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper Linux is optional. SHAPER Enterprise (historically "Enterprise OS") is the business reference manifestation across the layers and Packages.
+The canonical responsibilities are Shaper OS, Shaper Runtime and Shaper Workspace. Shaper Linux is optional. SHAPER Enterprise (historically "Enterprise OS") is the business reference manifestation across the layers and Packages.
 
-**Routes:** start at [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) for layer masters, A1/A2/A3 guides, and links to the executable kit. Team credit: [`AUTHORS.md`](AUTHORS.md) here; [V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) for the kit; commit trailers per Rule 2 in the executable repository.
+**Routes:** start at [agent routes](00-META/06_AGENT_ROUTES.md) for masters,
+cognitive depth and exact product owners. Team credit follows [AUTHORS.md](AUTHORS.md)
+and the selected realization's attribution rules.
+
+## Source and composition route
+
+The human–AI tandem supplies intention and mandate. Resolve the
+[composition owner](00-META/08_COMPOSITION_AND_SOURCE_MAP.md),
+[domain route](60-SERVICE-ROUTES/README.md), governing sources and required
+interfaces before selecting an implementation. The
+[glossary](https://github.com/xavdp-pro/shaper-glossary) owns definitions and
+aliases; [class/instance](00-META/09_CLASS_SPECIALIZATION_INSTANCE.md) owns this
+repository's lineage projection. Components replace bricks in current prose;
+retain historical URLs, code, socket, image and stored IDs through explicit aliases.
+
+[SHAPER OS V1.15](https://github.com/xavdp-pro/SHAPER-OS-V1.15) is the current
+framework entrance. A realization's declared adoption/version remains explicit.
+[State ownership](40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md) covers all
+durable application state in MariaDB; [acting agents](40-TRANSVERSAL/16_PERSISTENT_ACTING_AGENTS.md)
+cover context and session continuity. Keep public mental sources distinct from
+private implementations and companion work/discussion labs.
 
 ## Before acting
 1. Identify the owning layer and cross-layer contracts.

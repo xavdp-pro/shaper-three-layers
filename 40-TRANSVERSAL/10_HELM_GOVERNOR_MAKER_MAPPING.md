@@ -3,8 +3,8 @@
 | Component | Responsibility | Must not silently become |
 | --- | --- | --- |
 | Helm | conversational pilotage within one jurisdiction and one pilot level | root authority or universal executor |
-| Governor | routing, coordination, delegation and escalation, under the master root alone | source of human intent, or an organ a jurisdiction root commands |
-| Maker | approved structural/infrastructure materialization, under the master root alone | autonomous product owner |
+| Governor | routing, coordination, delegation and escalation, under its explicitly delegated jurisdiction | source of human intent or authority outside its declared scope |
+| Maker | approved structural/infrastructure materialization, under its explicitly delegated jurisdiction | autonomous product owner |
 | Runtime authority | capability, permission, mandate, policy, evidence | a UI convention |
 | Steward | human governance of major scopes, as the human of a root tandem | manual bottleneck for all low-risk work |
 
@@ -18,9 +18,9 @@ Pilot request → Helm clarifies within jurisdiction and pilot level → declara
 
 Helm may make shaping feel immediate; live appearance never permits bypassing authority, tests, migration or data preservation.
 
-A jurisdiction root shapes through this chain like any pilot. Its request reaches the Governor and a Maker as approved work; it never commands them. The Governor and the Makers belong to the master root's own universes and take direction from it alone. A feature that no class offers becomes a change to the class, made by its maker tandem, never an exception inside one instance.
+A jurisdiction root shapes through this chain like any pilot. Its request reaches the relevant governor and maker through the authorized desired-state contract. Governors and makers take direction through their declared governing owner and delegated jurisdiction. A feature that no class offers becomes a change to the class, made by its maker tandem, never an exception inside one instance.
 
-The deployed Governor/Maker pattern remains compatible: Governor holds delegated queues without broad host access; Maker alone materializes approved structural changes; parent/root levels repair compromised children; human plus directly controlled root-capable agents remain ultimate authority.
+The Governor/Maker pattern separates responsibilities: Governor holds delegated queues without broad host access; Maker alone materializes approved structural changes; parent/root levels repair compromised children; human plus directly controlled root-capable agents remain ultimate authority.
 
 ## Coordination is a role, not an outbound execution privilege
 
@@ -31,19 +31,14 @@ the diagram does not mean that the governor connects to hosts, possesses their
 private keys or runs infrastructure commands. “Maker” names an execution role;
 it does not by itself require an LLM or authorize autonomous policy decisions.
 
-An experimental PodMesh **manager universe** is a deployment package for control
-services, not a new governance layer or a replacement for this separation. Its
-registry, DNS and replicated-service design are targets under investigation;
-placing these components together does not grant broader authority or prove HA.
-PodMesh provides local runtime operations. See its
-[experimental scope](https://github.com/xavdp-pro/podmesh/blob/main/docs/EXPERIMENTAL-SCOPE.md)
-for what its evidence establishes. Rule 11 of SHAPER OS V1.14, amended on
-16 September 2026 by operator decision, admits nested Podman universes (the
-`nested` shape and host family) beside LXC universes, names PodMesh as their
-optional manager, and never Docker. The integration itself still requires
-qualification. PodMesh's active manager replica holds a lease over PodMesh
-operations; it is not the Governor of this table and gains no coordination
-authority from its name.
+A PodMesh infrastructure manager coordinates its delegated technical operations.
+A business governor owns approved desired state for its declared service scope;
+makers realize permitted changes and return attributable results. Several
+scoped governors may coexist in a fractal. The containing tandem's explicit
+jurisdiction/delegation determines their authority, not the name “manager” or
+physical nesting. [Composition/source ownership](../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+and the [ecosystem owner](https://github.com/xavdp-pro/shaper-ecosystem) maintain
+the relation to concrete product/workshop owners.
 
 Packaging governance tooling separately from work tooling is useful defense in depth; it never creates a second interface beside Helm. Runtime authorization and cryptographic identity remain the real boundary.
 
@@ -51,8 +46,8 @@ Packaging governance tooling separately from work tooling is useful defense in d
 
 Every Shaper universe participates in the same loop, regardless of its host or
 business specialization. This section describes the architectural relationship;
-it does not create authority beyond the [engineering canon](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/software/RULES.md)
-(Rules 20, 22–25, 27, 36–37).
+it follows the selected [framework](https://github.com/xavdp-pro/SHAPER-OS-V1.15)
+and the realization's explicit authority and recovery contract.
 
 - **Observe locally.** The universe records operational events, failures, attempted
   corrections and evidence references through Logger. It compares observed results
@@ -81,7 +76,7 @@ it does not create authority beyond the [engineering canon](https://github.com/x
   continuously. A reasoning agent can be called for scoped diagnosis or correction
   when required. This is not a second supervisory hierarchy alongside Shaper.
 
-Integration qualification must exercise local detection, parent-visible evidence,
-authorized correction and external verification, including a stale Logger/status
-feed, an unreachable child, a failed repair and root escalation. These scenarios
-remain to be demonstrated end to end; this documentation is not deployment proof.
+The owning realization and companion lab record integration outcomes for local
+detection, parent-visible evidence, authorized correction, external verification
+and escalation. [Persistent acting agents](16_PERSISTENT_ACTING_AGENTS.md) and
+[state ownership](17_APPLICATION_STATE_OWNERSHIP.md) supply the shared contracts.

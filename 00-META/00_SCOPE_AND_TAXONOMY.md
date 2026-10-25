@@ -28,8 +28,10 @@ An optional minimal sovereign host for deployments that want Shaper to control t
 | **Root Authority** | The governing authority formed by the human Steward plus directly controlled root-capable agents and policies. |
 | **Governor** | Orchestrator that routes, delegates, evaluates state and escalates. |
 | **Maker** | Actor/agent permitted to materialize approved structural or infrastructure changes. |
-| **Universe** | Sovereign organizational/system scope with identity, policies, data and children. |
-| **Sub-universe / Cell** | Child scope with bounded autonomy and an explicit parent. |
+| **Component** | Focused capability with its own contract; functional unit/FUnit is its technical projection. |
+| **Specialized cell/service** | Reusable base composed with domain units/configuration to provide a useful service. |
+| **Universe / logical space** | Logical membership and jurisdiction over services, with identity and relationships independent of placement. |
+| **Class / specialization / instance** | Reusable versioned form / permitted domain variation / identified realization with owned state. |
 | **Actor** | Human, agent, service or device able to request or perform an action. |
 | **Capability** | Explicit technical ability to perform an action. |
 | **Permission** | Authorization derived from identity, role, object, context and policy. |
@@ -46,6 +48,13 @@ An optional minimal sovereign host for deployments that want Shaper to control t
 | **Counter-view** | Independent perspective used to expose blind spots without automatically owning the decision. |
 | **Repair** | Restoration of non-trivially reproducible state. |
 | **Rebuild** | Re-creation of a reproducible component from a known healthy chain. |
+
+Definitions and historical projections are owned by the
+[independent glossary](https://github.com/xavdp-pro/shaper-glossary).
+[Composition](08_COMPOSITION_AND_SOURCE_MAP.md) and
+[class/instance](09_CLASS_SPECIALIZATION_INSTANCE.md) connect these terms to
+source ownership. Earlier organizational “cell” and container “universe” uses
+retain their source-era meaning through aliases.
 
 ## 3. User vocabulary
 

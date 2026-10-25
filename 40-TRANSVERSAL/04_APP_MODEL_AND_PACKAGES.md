@@ -76,6 +76,15 @@ Persist versions for:
 
 Historical events should be interpretable under the rules that existed when they occurred.
 
+## Class, package and running service
+
+[Class/specialization/instance](../00-META/09_CLASS_SPECIALIZATION_INSTANCE.md)
+separates a reusable package/schema from an identified specialized service.
+A domain package describes useful starting behavior; the app is its Workspace
+projection. Installing a package binds permitted configuration and dependencies;
+it does not create a new runtime identity by implication. Durable application
+state follows [MariaDB ownership](17_APPLICATION_STATE_OWNERSHIP.md).
+
 ## Packages
 
 A package is a reusable starting graph for a domain, not a fixed SaaS cage.

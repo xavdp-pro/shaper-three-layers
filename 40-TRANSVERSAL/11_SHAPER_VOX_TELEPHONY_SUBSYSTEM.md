@@ -1,13 +1,15 @@
 # Shaper Vox — Generic Enterprise Telephony Subsystem
 
-## Status & Purpose
+## Purpose and owning sources
 
-**Status:** target cross-layer contract. Clinic is the first evidence source,
-not the generic implementation itself. Every statement below is either an
-invariant, a configurable policy hook, or an acceptance target. Runtime proof
-must still name the exact universe, revision, configuration and evidence.
-
-This document defines the canonical architecture, intents catalog, and operational invariants of **Shaper Vox** (formerly explored via Clinic / `univ-clinic0`), the sovereign enterprise telephony subsystem within the **Shaper Three Layers** framework.
+SHAPER Vox gives people a useful communication service connected to their
+organization's governed context. This public source carries generic intentions,
+laws and cross-layer interfaces. [Telephony](../60-SERVICE-ROUTES/TELEPHONY.md),
+[softphone](../60-SERVICE-ROUTES/SOFTPHONE.md) and
+[CRM](../60-SERVICE-ROUTES/CRM.md) connect the required domain owners.
+Commercial implementation and operational work remain in the private product
+and its distinct companion lab. [Composition and aliases](../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+connect reusable classes to specialized service instances.
 
 Telephony is not an isolated side tool: it is an operational ingress and a primary communication surface of the enterprise. Every call is an interaction with the organization's object graph, governed by Shaper OS law, mediated by the Shaper Runtime, and experienced through the Shaper Workspace.
 
@@ -27,9 +29,9 @@ Telephony is not an isolated side tool: it is an operational ingress and a prima
                                     │ Constrains / Guides
 ┌───────────────────────────────────▼────────────────────────────────────┐
 │ 2. SHAPER RUNTIME (Operational Truth & Event Fabric)                   │
-│ - Connectors: SIP Trunks, WebRTC, Asterisk AudioSocket (8kHz PCM)      │
+│ - Connectors: SIP Trunks, WebRTC, configured signaling/media adapters      │
 │ - Audio Pipeline: VAD, streaming STT, LLM agent, streaming TTS         │
-│ - Guarded Tool Engine: Action-Bound Consent Guard, Aizuchi Classifier  │
+│ - Guarded Tool Engine: validated actions and conversational turn control  │
 │ - CTI & Object Resolution: Caller Phone → Contact / Customer / Company  │
 │ - Event Convergence: call.started, call.completed, Outbox/Compensation │
 └───────────────────────────────────┬────────────────────────────────────┘
@@ -47,12 +49,12 @@ Telephony is not an isolated side tool: it is an operational ingress and a prima
 
 ## 2. Naming Standard: Shaper Vox
 
-Names, as sealed on 17 September 2026 ([Naming and Deprecations](../00-META/05_NAMING_AND_DEPRECATIONS.md#product-names-and-their-layers)):
+Names and historical aliases (17 September 2026 source era) ([Naming and Deprecations](../00-META/05_NAMING_AND_DEPRECATIONS.md#product-names-and-their-layers)):
 - **Public product name**: **SHAPER Vox**. `Shaper Voice OS` is retired.
 - **Class repository**: `univ-vox-core`. Each client is an instance of that class, never a new class.
 - **Human interface**: the owner of a Vox instance steers it through **Helm**, as the jurisdiction root of that instance. The Vox Cockpit below is a Workspace-layer module, not a second conversational interface.
-- **Proposed generic brick roles** (names remain implementation choices until
-  their manifests and build contexts are accepted):
+- **Component roles and compatibility aliases** (the named IDs/ports below are
+  implementation-profile examples; domain laws do not require these ports):
   - `brick-telephony-pbx` (`:5060`, `:8088`): PJSIP/Asterisk engine, trunk registration, dialplan execution.
   - `brick-vox-engine` (`:8670`): AudioSocket bridge, voice agent orchestrator, Aizuchi classifier, action-bound consent guard.
   - `brick-softphone` (`:8660`): WebRTC client gateway and Flutter mobile signaling endpoint.

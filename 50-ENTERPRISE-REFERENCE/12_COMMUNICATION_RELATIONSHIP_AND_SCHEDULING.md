@@ -3,11 +3,15 @@
 Status: functional intent captured from Xavier on 2026-09-09. This is a design
 requirement, not an implementation or deployment claim. It extends the enterprise
 reference; source archives remain unchanged. Proposed modeling choices below
-must be translated into brick intents, rules, contracts and tests before coding.
+must be translated into component intents, rules, contracts and tests before coding.
+
+Domain dependencies: [CRM](../60-SERVICE-ROUTES/CRM.md),
+[telephony](../60-SERVICE-ROUTES/TELEPHONY.md) and
+[softphone](../60-SERVICE-ROUTES/SOFTPHONE.md).
 
 ## 1. Multilevel intent
 
-Preserve proven co-produced code. Extract reusable primitives, compose bricks
+Preserve proven co-produced code. Extract reusable primitives, compose components
 into useful subsystems, then specialize business behavior and branding for each
 project. The furniture reseller is one such specialization. A subsystem must
 already perform useful default workflows; it is more than empty extension points.
@@ -21,7 +25,9 @@ Packages supply domain behavior. Nested composition does not require nested LXCs
 Represent a party as a person or organization. Customer and supplier are roles
 of a party in a relationship, and may coexist. Do not duplicate an organization
 because it both buys and sells. Prefer role composition over an exclusive
-Customer/Supplier inheritance tree; the storage technology is not prescribed.
+Customer/Supplier inheritance tree. Durable relationship and workflow records
+belong to their private MariaDB state owner; table and partition design follows
+function, retention and query need. See [state ownership](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md).
 
 Parties link to contacts, dated contact methods, zero or more known sites/addresses,
 employees, services, appointments, communications, tasks and business objects.
@@ -40,7 +46,7 @@ solely because the caller number matches. Preserve merge history and attribution
 
 The operator-ready telephony package requires minimal relationships, calendar,
 identity/permissions, media/transcripts, service mailboxes, in-app notifications
-and evidence. An individual IPBX brick need not depend on the entire CRM/ERP.
+and evidence. An individual IPBX component need not depend on the entire CRM/ERP.
 Use shared contracts without circular coupling between CRM and telephony.
 
 Email, SMS, payment and mobile push are optional adapters/packages. The telephony
@@ -137,7 +143,7 @@ business and universe-administration events. Enforce separate audiences/permissi
 scoped subscriptions and private lock-screen payloads; acknowledge/read state
 synchronizes with the web inbox. Reuse the existing mobile client where suitable.
 
-The email brick must support personal and shared mailboxes, starting with a general
+The email component must support personal and shared mailboxes, starting with a general
 contact mailbox and two fictional user mailboxes for tests. Inspect Xavier's custom
 webmail source before choosing an implementation. Its location/integration remains
 to be identified. Credentials and real addresses do not belong in seed profiles.

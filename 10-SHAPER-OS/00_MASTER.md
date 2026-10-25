@@ -8,6 +8,15 @@ The central problem is not “how do we make a system that never makes mistakes?
 
 > How do we create a powerful system that can detect when it is wrong, preserve enough integrity to inspect the error, remain sovereign enough to choose, and remain plastic enough to change?
 
+The [composition projection](../00-META/08_COMPOSITION_AND_SOURCE_MAP.md)
+relates these responsibilities to components, cells/services and logical spaces.
+[Application state ownership](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md)
+places all durable application state in MariaDB, with partitioning by actual need.
+The per-functional isolation profile above remains the selected boundary: a
+private state owner is not a complex SQL cluster inside every component.
+Governance and operational resilience preserve predictable recovery through
+service/infrastructure coordination.
+
 ## 1. Central orientation
 
 > **Stable in integrity. Mobile in form. Revisable in understanding. Guided by ethics. Controlled by feedback from reality.**
@@ -229,7 +238,7 @@ This is why **A1/A2/A3 cognitive depth and permissions are separate axes**.
 
 The practical top is **Root Authority**, normally a human Steward working with directly controlled root-capable agents.
 
-At the top of the whole fractal this is the **master root**. A client given Helm over their own universes holds a **jurisdiction root**: Root Authority inside that jurisdiction, without power over hosts, Governor or Makers.
+At the top of the whole fractal this is the **master root**. A client given Helm over their own universes holds a **jurisdiction root**: Root Authority inside that jurisdiction, without implicit power over hosts or unrelated governors/makers. Explicit delegation names any authorized infrastructure or fabrication capability.
 
 Root Authority must be able to:
 

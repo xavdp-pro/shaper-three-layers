@@ -6,6 +6,16 @@
 
 # Enterprise OS — Functional Graph
 
+## State, source ownership and semantic indexes
+
+This is a conceptual relationship graph. Durable application facts are owned in
+MariaDB according to [state ownership](../40-TRANSVERSAL/17_APPLICATION_STATE_OWNERSHIP.md).
+A selected Qdrant adapter is a derived retrieval index with source references and
+a rebuild path. [CRM](../60-SERVICE-ROUTES/CRM.md) and
+[telephony](../60-SERVICE-ROUTES/TELEPHONY.md) retain focused domain ownership.
+The [glossary](https://github.com/xavdp-pro/shaper-glossary) distinguishes Maestro
+the scheduling component from governance, coordination and interaction roles.
+
 ## Core graph
 
 ```text
@@ -53,7 +63,7 @@ ENTERPRISE
 ├── KNOWLEDGE
 │   ├── GED
 │   ├── OCR/extraction
-│   ├── Qdrant
+│   ├── derived semantic index
 │   ├── RAG
 │   ├── templates
 │   └── generated documents

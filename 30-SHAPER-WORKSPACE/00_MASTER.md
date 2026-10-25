@@ -6,6 +6,14 @@ Shaper Workspace is a portable, agent-native organizational work environment tha
 
 The Workspace's job is to make the organization usable: context, objects, people, apps, agents, search, voice and controlled external surfaces.
 
+The Workspace responsibility presents a user's permitted logical spaces and
+specialized services. A Workspace product is one realization of that
+responsibility; it is not a mandatory container around its members. Follow
+[composition](../00-META/08_COMPOSITION_AND_SOURCE_MAP.md),
+[class/instance](../00-META/09_CLASS_SPECIALIZATION_INSTANCE.md) and
+[service routes](../60-SERVICE-ROUTES/README.md). Runtime evaluates each requested
+action and owns durable application state, including persisted layouts/context.
+
 ## 1. Product proposition
 
 ```text

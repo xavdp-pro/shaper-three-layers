@@ -34,37 +34,33 @@ the additional objects, applications, cells or Universes that their reality
 requires.
 
 The foundation is not a fixed monolithic ERP. It is a governed system of
-reusable bricks and durable relationships, able to grow with the organization
+reusable components and durable relationships, able to grow with the organization
 without forcing it to discard its history or conform to a rigid template.
 
-## Service hierarchy
+## Service membership and roles
 
-| Scope | Working name | Purpose |
+| Concern | Working name | Purpose |
 | --- | --- | --- |
-| Platform parent | **Shaper Service** | Subscription, identity boundary, entitlement, billing and the service control plane. |
-| Operational scope | **Shaper Organization** | One governed enterprise, association, practice or operating entity with its own people, objects, policies, data and applications. |
-| Bounded child scope | **Shaper Cell** | A delegated team, site, project, client environment or specialized operational scope inside an Organization. |
-| Work environment | **Shaper Workspace** | The human-facing surfaces through which people and agents observe, collaborate and act. |
+| Commercial service | **Shaper Service** | Subscription, entitlement, billing and requests. |
+| Logical membership | **Space / Organization** | Services and relationships belonging to an enterprise, association, project or other jurisdiction. |
+| Useful capability | **Specialized cell/service** | A base composed with domain units, such as telephony, CRM or a shop. |
+| Interaction | **Shaper Workspace / Helm** | Permitted work surfaces and conversational piloting. |
 
-**Universe** remains the precise architectural term for any sovereign
-organizational or system scope. In ordinary product language, **Organization**
-is clearer for a company customer. An Organization may be a Universe; a Cell may
-be a child Universe when its autonomy, data and policy boundary require it.
+A space is a logical collection of services; its members may run on different
+hosts. Workspace presents those members. It is not the next box in a physical
+containment chain. See [composition](08_COMPOSITION_AND_SOURCE_MAP.md),
+[class/instance](09_CLASS_SPECIALIZATION_INSTANCE.md) and the
+[independent glossary](https://github.com/xavdp-pro/shaper-glossary).
 
-Any of these scopes can be granted as a **jurisdiction**: the universes a pilot is in charge of through Helm. A client given an Organization, or a Cell inside it, holds the **jurisdiction root** of that scope; the founding tandem at the top of the fractal holds the **master root** ([strata](05_NAMING_AND_DEPRECATIONS.md#strata-of-authority-17-september-2026)).
-
-A jurisdiction may span several Organizations: that is the view a client or a
-Steward has, through Helm, of their park of universes. Such a view is not a
-parent authority by default. It receives only the information and control each
-Organization explicitly discloses through policy, role and mandate. Its purpose
-is stewardship and orientation, not automatic surveillance. (The earlier working
-name `Shaper Portfolio` for this view is retired on 17 September 2026: Rule 37
-refuses "portfolio" as a perimeter; the word is **jurisdiction**.)
+A jurisdiction grants a declared scope of responsibility and authority. It may
+span several organizations or spaces, subject to their explicit disclosure and
+control policies. Master/jurisdiction root roles remain governed by their scoped
+mandate and [authority mapping](../40-TRANSVERSAL/10_HELM_GOVERNOR_MAKER_MAPPING.md).
 
 ## Growth model
 
 A subscription grants a declared capacity: one or more Organizations, their
-Cells, selected bricks, usage budgets and authorized execution environments.
+services, selected components, usage budgets and authorized execution environments.
 An entitlement grants eligibility and capacity; it never grants operational
 permission, data visibility or a mandate to act. Those remain Runtime authority
 decisions inside the relevant Organization.
@@ -76,7 +72,9 @@ does not silently become Organization authority or operational source of truth.
 
 This keeps growth incremental:
 
-`Shaper Service → Organization → Cell → Workspace`, each of which can be granted as a jurisdiction
+a selected class → authorized service instance → logical membership → permitted
+Workspace projection. Commercial approval/entitlement, operational mandate,
+governor desired state and maker outcome remain linked but distinct records.
 
 The architecture scales by adding bounded, observable scopes — not by turning
 one central instance into an opaque monolith.

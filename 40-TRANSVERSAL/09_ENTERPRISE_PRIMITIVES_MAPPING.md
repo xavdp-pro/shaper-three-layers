@@ -6,6 +6,14 @@ The earlier Enterprise OS documentation contained a rich business graph. Splitti
 
 This document maps the earlier functional corpus into the new architecture without turning this repository back into a monolithic ERP specification.
 
+## Focused service owners
+
+Use [CRM](../60-SERVICE-ROUTES/CRM.md), [telephony](../60-SERVICE-ROUTES/TELEPHONY.md)
+and [softphone](../60-SERVICE-ROUTES/SOFTPHONE.md) for domain contracts and
+consumers. Their shared graph links source-owned records through interfaces;
+[state ownership](17_APPLICATION_STATE_OWNERSHIP.md) preserves full MariaDB
+persistence and each service's responsibility.
+
 ## Mapping
 
 | Earlier Enterprise primitive | Primary new home | Workspace projection |

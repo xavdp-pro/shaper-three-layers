@@ -2,6 +2,18 @@
 
 Licensed under [CC BY-SA 4.0](LICENSE). See [NOTICE.md](NOTICE.md) and [AUTHORS.md](AUTHORS.md) for ownership, scope, and provenance.
 
+## Understand together, give form, put it to use, learn
+
+The human–AI tandem is the cornerstone. The human contributes intention and
+lived context; agents contribute construction, useful initiative and counter-view.
+[SHAPER OS V1.15](https://github.com/xavdp-pro/SHAPER-OS-V1.15) carries the common
+intentions, laws and construction recipes. This repository projects them into
+OS, Runtime and Workspace responsibilities.
+
+Agents start from the task, resolve its source owners and required dependencies,
+then construct or adapt the useful realization. New forms remain possible as
+people, tools and circumstances evolve.
+
 ## Shaper: building reliable collaboration between humans and agents
 
 Reliability means being able to rely on what is done, knowing what remains
@@ -25,8 +37,8 @@ evidence and responsibilities easier to carry between people, agents and project
 The same method can be reused in another team or universe while adapting its
 values, roles and permissions. People retain their choices; agents act within
 explicit mandates. Firm limits coexist with openness to evidence and correction.
-These are intended benefits, not measured guarantees: written principles alone
-neither remove hallucinations nor prove that a deployed system follows them.
+The tandem evaluates these benefits through actual use and improves the method
+from the discrepancies it observes.
 
 See the [decision foundation](10-SHAPER-OS/00_MASTER.md#decision-hygiene-ethics-time-and-experience) and [qualification scenarios](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md).
 
@@ -36,21 +48,20 @@ This repository isolates the architecture discussed for a portable, sovereign, a
 
 It is deliberately **not** the general Shaper OS repository, not the SHAPER Enterprise application catalogue, and not a Linux distribution repository. Its purpose is to define the system that lets an organization keep the same work environment, identity, context, applications, agents and governance while the host device may change between Windows, macOS, Linux, mobile, web, or an optional sovereign Shaper Linux host.
 
-## Executable companion (Shaper OS kit)
+## Framework and realization sources
 
-The **runnable** Shaper OS tree — bricks, universes, `RULES.md`, tests, deploy
-and proof scripts — lives in
-[**`SHAPER-OS-V1.14`**](https://github.com/xavdp-pro/SHAPER-OS-V1.14) on GitHub.
-Use that repository to clone, build, and prove a universe (for example `univ-base`).
-Use **this** repository when you need the organizational map (governance kernel,
-Runtime responsibilities, Workspace shell) without mixing it with install steps.
+[SHAPER OS V1.15](https://github.com/xavdp-pro/SHAPER-OS-V1.15) owns generic
+intentions, laws and construction recipes. The tandem builds or adapts a
+realization with its exact implementation owner and companion lab.
+[V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) preserves an earlier
+implementation lineage and its own build/deployment contracts.
 
 | Question | Read |
-| :--- | :--- |
-| Where do I start as an agent or architect? | [`00-META/06_AGENT_ROUTES.md`](00-META/06_AGENT_ROUTES.md) and [`AGENTS.md`](AGENTS.md) |
-| How do I deploy and prove a universe? | [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) — `AGENTS.md`, runbook, `software/universes/univ-base/` |
-| How do the three layers fit together? | This repository — `10-SHAPER-OS/`, `20-SHAPER-RUNTIME/`, `30-SHAPER-WORKSPACE/` |
-| Who gets credit? | This repo [`AUTHORS.md`](AUTHORS.md); executable kit [V1.14 `AUTHORS.md`](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/main/AUTHORS.md) and `Co-Authored-By` trailers |
+| --- | --- |
+| Where does an agent start? | [Task routes](00-META/06_AGENT_ROUTES.md) and [instructions](AGENTS.md) |
+| Which service and implementation are needed? | [Domain dispatcher](60-SERVICE-ROUTES/README.md) and the selected owner's versioned interfaces |
+| How do composition and responsibilities connect? | [Composition/source map](00-META/08_COMPOSITION_AND_SOURCE_MAP.md) and the three masters |
+| Who receives credit? | [AUTHORS.md](AUTHORS.md) here and the selected realization's attribution rules |
 
 ## The three primary layers
 
@@ -69,6 +80,23 @@ Windows | macOS | Linux | mobile | web | optional Shaper Linux
 ```
 
 **Shaper Linux is transversal and optional.** It is a sovereign host implementation, not a fourth conceptual layer.
+
+## Composition and source owners
+
+[Composition/source map](00-META/08_COMPOSITION_AND_SOURCE_MAP.md) relates
+components, generic stem cells, specialized cells/services, logical spaces and
+fractal governance to the three responsibilities above. [Class, specialization
+and instance](00-META/09_CLASS_SPECIALIZATION_INSTANCE.md) distinguishes reusable
+forms from their running identities. A logical space groups services and
+jurisdiction independently of physical placement.
+
+Use the [service dispatcher](60-SERVICE-ROUTES/README.md) for domain work,
+[ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) for composition ownership,
+and [independent glossary](https://github.com/xavdp-pro/shaper-glossary) for terms
+and historical aliases. Each product or mental-source project has a distinct
+private `-lab` work repository. Public generic intentions/laws connect to private
+user realizations through their permitted source registry; VOX implementation
+and operational history remain private.
 
 ## Central architectural statement
 
@@ -94,7 +122,7 @@ Canonical file names per layer: `10_AGENT_A1.md`, `11_AGENT_A2.md`, `12_AGENT_A3
 
 1. **Delivery and proof** — one shared feature inventory per perimeter ([`90-REVIEW/SCOPE-FEATURE-INVENTORY.md`](90-REVIEW/SCOPE-FEATURE-INVENTORY.md)); agents report against the same feature IDs. Do not create a disconnected checklist per engine.
 2. **Cognitive role** — pick the A1, A2, or A3 guide for the owning layer; stay within mandate and escalate across depth or authority boundaries.
-3. **Executable credit** — commits, tests, and Rule 2 trailers on the [SHAPER-OS-V1.14](https://github.com/xavdp-pro/SHAPER-OS-V1.14) kit; documentation credit on [`AUTHORS.md`](AUTHORS.md) in each repository.
+3. **Realization credit** — commits, tests and attribution follow the selected implementation owner; documentation credit lives in [`AUTHORS.md`](AUTHORS.md) and each source repository.
 
 ## Documentation method
 
@@ -161,24 +189,9 @@ The earlier `layers/` tree is retained only as an initial bootstrap snapshot; th
 
 - [Agent routes navigation review (2026-09-15)](90-REVIEW/AGENT-ROUTES-NAVIGATION-REVIEW-2026-09-15.md)
 
-## Conclusion: what can be relied on today?
+## Learning and source continuity
 
-What is supported by evidence, under which conditions, and what remains to be
-verified? These questions govern the conclusion; reliability is demonstrated
-within a stated scope, not claimed without limits.
-
-For the decision-hygiene additions reviewed on 2026-09-11, the evidence establishes
-explicit contracts for authority, contextual action, counter-view and integrity,
-with linked qualification scenarios. Documentation consistency and file links
-were checked, including an independent counter-view. See the
-[scope and evidence record](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md). This finding concerns those additions,
-not qualification of the entire repository or every deployed agent.
-
-The introduction's four benefits remain objectives to evaluate: fewer handoff
-misunderstandings between human and agent; useful agent-to-agent review without
-authority bypass; evidence-based reports to humans; and clearer human agreements.
-The nine behavioral scenarios have not been executed in this documentation work,
-and effects on human collaboration have not been measured. Therefore this review
-does not establish reduced error rates, improved daily autonomy or elimination
-of hallucinations. Future conclusions must name actual outcomes, conditions and
-remaining gaps rather than repeat these intended benefits as achievements.
+Use the [review records](90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md) for the
+historical scope and evidence of earlier documentation work. The mental source
+keeps responsibilities and relationships readable; each realization and its
+companion lab carry its delivery, operation and learning records.

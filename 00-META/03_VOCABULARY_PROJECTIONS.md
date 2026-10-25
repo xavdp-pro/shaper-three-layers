@@ -113,10 +113,12 @@ review_conditions:
 
 | Internal | User/Operator projection |
 |---|---|
-| Universe | Workspace / Organization |
-| Sub-universe | Space / Team / Business scope |
+| Universe / logical space | Space or organizational context according to actual membership |
+| Specialized cell/service | Service, such as telephony, CRM or a shop |
+| Component / functional unit | Component; expose technical detail when useful |
+| Class / specialization / instance | Reusable form / selected domain form / identified service |
 | Object | File, customer, task, record, item |
-| Capability | Permission / allowed action |
+| Capability | Available action; distinguish it from granted permission |
 | Mandate | Instruction / approved automation |
 | Vault | Files / secure storage |
 | Object graph | Connected company data |
@@ -133,6 +135,11 @@ review_conditions:
 | Jurisdiction root | Full control of your own system |
 | Master root | Invisible outside the founding tandem's tools |
 | Pilot level | Your level: see and learn, prepare and propose, act within a mandate, shape your system |
+
+Use the [glossary and aliases](https://github.com/xavdp-pro/shaper-glossary) for
+stable meanings. [Composition](08_COMPOSITION_AND_SOURCE_MAP.md) distinguishes
+membership, dependency, authority and physical placement. Workspace names an
+interaction responsibility/product; it is not a mandatory containment level.
 
 ## Rule
 
