@@ -55,8 +55,8 @@ Names and historical aliases (17 September 2026 source era) ([Naming and Depreca
 - **Human interface**: the owner of a Vox instance steers it through **Helm**, as the jurisdiction root of that instance. The Vox Cockpit below is a Workspace-layer module, not a second conversational interface.
 - **Component roles and compatibility aliases** (the named IDs/ports below are
   implementation-profile examples; domain laws do not require these ports):
-  - `brick-telephony-pbx` (`:5060`, `:8088`): PJSIP/Asterisk engine, trunk registration, dialplan execution.
-  - `brick-vox-engine` (`:8670`): AudioSocket bridge, voice agent orchestrator, Aizuchi classifier, action-bound consent guard.
+  - `funit-vox-engine` (compat: `shaper-funit-vox`, `brick-telephony-pbx` + `brick-vox-engine`): mandatory headless telephony & voice engine organite encapsulating Asterisk PJSIP/AudioSocket, voice orchestration and its private MariaDB in its own functional Podman container.
+  - `funit-vox-web`: optional human administration & switchboard web organite built on the canonical Shaper React + Vite web mold (`univ-webapp-core`) in its own dedicated functional Podman container (never installed directly in the outer LXC/nested membrane OS, preserving inter-organite security).
   - `brick-softphone` (`:8660`): WebRTC client gateway and Flutter mobile signaling endpoint.
 - **Human Workspace Modules**:
   - `Vox Cockpit`: Inbound switchboard, extension presence, live call transfer.

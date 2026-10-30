@@ -121,6 +121,16 @@ Design for partial failure:
 - network segmentation where useful.
 
 A local compromise should not automatically become a global compromise.
+When an outer system container (`shape: lxc` or `shape: nested` membrane) hosts
+inner functional Podman organite containers, **the outer membrane must remain
+100% pure**: never install or run application code, web servers or MariaDB
+daemons directly in the outer membrane OS. Because the parent membrane namespace
+sits above all child organite namespaces and holds `/var/lib/containers/storage/`,
+any process compromised in the membrane would bypass inter-organite isolation and
+expose sibling organites (including `Vault`). Likewise, mandatory headless
+domain engines (`*-engine`) are separated from optional human web surface
+organites (`*-web`, built on the `univ-webapp-core` React mold inside their own
+unprivileged container).
 
 ## 11. Runtime compromise
 
